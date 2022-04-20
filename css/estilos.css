@@ -1,0 +1,1106 @@
+.tarjeta, .tarjeta__3, .tarjeta__2 {
+  width: 50%;
+  margin: 20px auto;
+  padding: 25px;
+  background: #549382;
+  border-radius: 10px;
+}
+
+.tarjeta img, .tarjeta__3 img, .tarjeta__2 img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta .titulo, .tarjeta__3 .titulo, .tarjeta__2 .titulo {
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "ubuntu-bold";
+}
+
+.tarjeta .texto, .tarjeta__3 .texto, .tarjeta__2 .texto {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "ubuntu-regular";
+}
+
+h1 {
+  color: black;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+.fondo-gris-1 {
+  background-color: rgb(93, 93, 93);
+}
+
+.fondo-gris-2 {
+  background-color: rgb(160, 160, 160);
+}
+
+.fondo-gris-3 {
+  background-color: rgb(50, 50, 50);
+}
+
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--send-email {
+  background-color: #c25e30;
+}
+
+div {
+  background-color: green;
+  color: blue;
+  border-color: pink;
+}
+
+h1 {
+  font: 20px;
+  text-transform: uppercase;
+  color: red;
+}
+
+h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: green;
+}
+
+h3 {
+  font-size: 10px;
+  text-transform: lowercase;
+  color: blue;
+}
+
+nav {
+  background-color: #000;
+}
+nav a {
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #111;
+  color: #FFF;
+}
+nav a:active {
+  color: #FFF;
+}
+
+.center {
+  text-align: center;
+}
+
+.negro {
+  background-color: #000;
+}
+
+.rojo-mc {
+  background-color: #c2172a;
+}
+
+.verde-metro {
+  background-color: #00a9ad;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ubuntu-regular";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu-light";
+  src: url("../assets/fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "ubuntu-bold";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+body {
+  font-family: "ubuntu-regular";
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1, h2, p, button, a, .boton {
+  font-family: "ubuntu-regular";
+}
+
+/****HOME*****/
+header {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.encabezado .navbar-v3ktor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: linear-gradient(black, rgb(32, 32, 32));
+  height: 65px;
+  align-items: center;
+  color: white;
+  font-family: "ubuntu-regular";
+}
+
+.menu-v3ktor {
+  position: absolute;
+  right: 2%;
+}
+
+.navbar-v3ktor a {
+  color: #FFF;
+  border-radius: 20px;
+}
+.navbar-v3ktor:hover {
+  color: rgb(152, 152, 152);
+  background-color: rgb(77, 77, 77);
+}
+
+.encabezado .menu-bar {
+  color: #FFF !important;
+  display: none;
+}
+.encabezado .logo {
+  display: flex;
+  width: 90px;
+  height: 30px;
+  grid-column: 2/3;
+}
+.encabezado .menu {
+  color: #FFF;
+  font-size: 14px;
+  display: flex;
+  grid-column: 8/12;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: all 500ms;
+  padding: 10px;
+}
+.menu:hover {
+  color: rgb(152, 152, 152);
+  transform: translate(0px, 10px);
+  background-color: rgb(77, 77, 77);
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: repeat(8, 1fr);
+  height: 100vh;
+  justify-items: center;
+  background-image: url(../assets/img_index.jpg);
+  background-size: cover;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+.principal .logo {
+  display: flex;
+  grid-column: 2;
+  grid-row: 4;
+  animation-name: opacidad;
+  animation-play-state: running;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+}
+.principal .titulo {
+  display: flex;
+  grid-column: 2;
+  grid-row: 5;
+  animation: flash;
+  animation-duration: 200ms;
+  animation-delay: 1s;
+}
+
+@keyframes opacidad {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.quienes-home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+.quienes-home .titulo {
+  display: flex;
+  grid-column: 2/5;
+  grid-row: 2/3;
+  align-items: end;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.quienes-home .texto {
+  display: flex;
+  grid-column: 2/6;
+  grid-row: 3/4;
+  font-family: "ubuntu-light";
+  line-height: 24px;
+}
+.quienes-home img {
+  display: flex;
+  grid-column: 6/9;
+  grid-row: 2/6;
+}
+.quienes-home a {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #FFF;
+  background-image: linear-gradient(black, rgb(23, 23, 23));
+  border: 1px solid #000;
+  display: flex;
+  grid-column: 2;
+  grid-row: 4;
+  justify-content: center;
+  text-decoration: none;
+}
+.quienes-home button:hover {
+  background: rgb(45, 45, 45);
+  color: #FFF;
+}
+.quienes-home button {
+  margin-top: 20px;
+  width: 120px;
+  height: 50px;
+  padding: 13px;
+  box-sizing: border-box;
+  color: #FFF;
+  background: #000;
+  border: none;
+  display: flex;
+  grid-column: 2;
+  grid-row: 4;
+  justify-content: center;
+  text-decoration: none;
+}
+.quienes-home .cerrar {
+  margin-top: 0;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.descripcion-home {
+  font-family: "ubuntu-bold";
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  box-sizing: border-box;
+  background-color: #000;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: 700;
+  height: 100vh;
+}
+.descripcion-home h3 {
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 3;
+  font-size: 20px;
+  font-family: "ubuntu-light";
+  color: rgb(53, 53, 53);
+  align-items: end;
+  margin-left: 40px;
+  font-family: "ubuntu-light";
+}
+.descripcion-home p {
+  color: rgb(56, 56, 56);
+  display: flex;
+  grid-column: 1/12;
+  grid-row: 4;
+  box-sizing: border-box;
+  margin-left: 40px;
+  line-height: 65px;
+  font-family: "ubuntu-light";
+}
+.descripcion-home .conceptos {
+  display: flex;
+  grid-row: 5;
+  grid-column: 1/12;
+  font-size: 2.3em;
+  color: #222;
+  line-height: 100px;
+  opacity: 0.4;
+  margin-left: 40px;
+}
+
+.portfolio-home {
+  background-color: #FFF;
+  margin-bottom: 50px;
+}
+.portfolio-home .titulo {
+  color: #000;
+  font-size: 40px;
+  font-weight: 800;
+  justify-content: center;
+  margin: 40px 0;
+}
+.portfolio-home .trabajos {
+  justify-content: center;
+}
+.portfolio-home .trabajo_hijo {
+  margin: 3px 5px;
+}
+
+.titulo-servicio h2 {
+  font-family: 30px;
+}
+
+.servicios-home {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+  justify-items: center;
+}
+.servicios-home .icon-serv {
+  font-size: 9em;
+  margin: 20px 0;
+  color: black;
+}
+.servicios-home .titulo {
+  display: flex;
+  grid-column: 5;
+  grid-row: 2;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.servicios-home .servicios {
+  display: flex;
+  flex-direction: row;
+  grid-column: 1/12;
+  grid-row: 3/6;
+}
+.servicios-home .hijo {
+  width: 300px;
+  margin: 0 20px;
+  text-align: center;
+}
+.servicios-home .hijo:hover {
+  background-color: rgb(0, 0, 0);
+}
+.servicios-home .hijo:hover .texto {
+  color: white;
+}
+.servicios-home .hijo:hover .titulo-servicio {
+  color: white;
+}
+.servicios-home .hijo:hover .icon-serv {
+  color: white;
+}
+.servicios-home .hijo:hover a {
+  border: 1px solid white;
+}
+.servicios-home .hijo:hover a:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+.servicios-home .texto {
+  margin: 10px 0 20px 0;
+  line-height: 25px;
+}
+.servicios-home img {
+  width: 150px;
+}
+.servicios-home a {
+  box-sizing: border-box;
+  background: #000;
+  border: 1px solid black;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+}
+.servicios-home a:hover {
+  background: rgb(23, 23, 23);
+  color: #FFF;
+}
+
+.section-video {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /*.solido-negro{
+      background-color: $color-fondo;
+      opacity: .7;
+      position: absolute;
+      z-index: 90;
+      width: 100%;
+      height: 100vh;
+      box-shadow: inset 0px 0px 10em rgb(0, 0, 0);   
+  }*/
+}
+.section-video .video-home {
+  width: 100%;
+  height: 100hv;
+}
+.section-video .content {
+  position: absolute;
+  color: #000;
+  margin-left: 50px;
+  z-index: 100;
+  opacity: 0.7;
+}
+.pieDepagina {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 70px;
+  border-top: 1px solid black;
+}
+.pieDepagina .logo {
+  display: flex;
+  width: 90px;
+  height: 40px;
+  grid-column: 2;
+}
+.pieDepagina .texto {
+  display: flex;
+  grid-column: 4/7;
+  font-size: 14px;
+}
+.pieDepagina .redes {
+  display: flex;
+  grid-column: 8/9;
+  justify-content: space-around;
+}
+.pieDepagina .fa-brands {
+  margin: 0 10px;
+}
+.pieDepagina a {
+  color: #000;
+  text-decoration: none;
+}
+.pieDepagina a:hover {
+  color: rgb(106, 106, 106);
+  text-decoration: none;
+}
+.pieDepagina .tel {
+  display: flex;
+  grid-column: 10/12;
+  text-decoration: none;
+}
+
+/******NOSOTROS********/
+.quienes-home .imagen-nosotros {
+  width: 500px;
+}
+
+/***PORTFOLIO***/
+.principal-portfolio {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.principal-portfolio .titulo {
+  display: flex;
+  grid-column: 6/8;
+  grid-row: 2;
+  font-size: 40px;
+  font-weight: 800;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.principal-portfolio .trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 2/12;
+  grid-row: 3;
+  justify-content: center;
+}
+.principal-portfolio .trabajo_hijo {
+  margin: 3px 5px;
+}
+.principal-portfolio .img-serv {
+  width: 100px;
+}
+
+.carousel {
+  display: flex;
+  grid-column: 2/12;
+  grid-row: 3/4;
+}
+
+.mastrabajos {
+  margin-bottom: 40px;
+}
+.mastrabajos .titulo {
+  margin-bottom: 10px;
+}
+
+/***SERVICIOS***/
+.servicios-boot {
+  height: 100vh;
+}
+.servicios-boot h1 {
+  text-align: center;
+  height: 100px;
+}
+.servicios-boot img {
+  width: 200px;
+}
+.servicios-boot .boton {
+  margin-top: 20px;
+  width: 100px;
+  height: 48px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  background-image: linear-gradient(black, rgb(23, 23, 23));
+  border: 1px solid black;
+  display: flex;
+  grid-column: 2;
+  grid-row: 4;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.servicio_hijo h2 {
+  font-size: 25px !important;
+  justify-content: start !important;
+}
+
+/***CONTACTO***/
+.contacto {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.contacto .titulo {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 3;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.contacto .formulario {
+  grid-column: 2/6;
+  grid-row: 4/5;
+}
+.contacto .imagen {
+  grid-column: 6/10;
+  grid-row: 2/5;
+}
+.contacto .boton {
+  text-align: center;
+  padding: 5px 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  height: 45px;
+  width: 92px;
+  text-decoration: none;
+}
+.contacto .campo-texto {
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 70%;
+  height: 30px;
+  margin-bottom: 14px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.contacto textarea {
+  width: 100%;
+}
+
+/********MEDIA QUERIES*********/
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+  .encabezado .navbar-v3ktor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    height: 70px;
+    align-items: center;
+  }
+  .encabezado .menu {
+    display: none;
+  }
+  .encabezado .logo {
+    display: flex;
+    grid-column: 1;
+  }
+  .encabezado .menu-bar {
+    color: white;
+    display: flex;
+    grid-column: 4;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .menu-v3ktor {
+    position: static;
+  }
+
+  .principal {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    justify-items: center;
+    background-image: url(../assets/img_index.jpg);
+    background-size: cover;
+  }
+  .principal .logo {
+    width: 300px;
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .principal .titulo {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .quienes-home {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .quienes-home .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .quienes-home .texto {
+    display: flex;
+    grid-column: 2;
+    grid-row: 3/4;
+    font-family: "ubuntu-light";
+  }
+  .quienes-home .imagen-nosotros {
+    display: flex;
+    grid-column: 2;
+    grid-row: 5;
+    width: 300px;
+    justify-self: center;
+  }
+  .quienes-home img {
+    display: flex;
+    grid-column: 6/9;
+    grid-row: 2/6;
+  }
+
+  .descripcion-home {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    font-size: 4em;
+    font-weight: 700;
+    height: 100vh;
+  }
+  .descripcion-home h3 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+    font-family: "ubuntu-light";
+    color: rgb(53, 53, 53);
+    align-items: end;
+    margin-left: 0px;
+  }
+  .descripcion-home p {
+    color: rgb(56, 56, 56);
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    box-sizing: border-box;
+    margin-left: 0px;
+    line-height: 40px;
+    font-size: 0.7em;
+    font-family: "ubuntu-light";
+  }
+  .descripcion-home .conceptos {
+    display: flex;
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 0.8em;
+    color: #222;
+    line-height: 50px;
+    opacity: 0.4;
+    margin-left: 0px;
+  }
+
+  .portfolio-home {
+    height: 100%;
+  }
+  .portfolio-home .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+  .portfolio-home .trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2;
+    grid-row: 3/6;
+    justify-content: center;
+  }
+  .portfolio-home .trabajo_hijo {
+    margin: 3px 5px;
+  }
+  .portfolio-home img {
+    width: 290px;
+  }
+
+  .mastrabajos .img-fluid {
+    margin: 20px 0;
+  }
+
+  .servicios-boot {
+    height: 100%;
+  }
+
+  .servicios-home {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+    height: 190vh;
+    justify-items: center;
+  }
+  .servicios-home .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .servicios-home .servicios {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .servicios-home .hijo {
+    margin: 30px 0;
+  }
+
+  .pieDepagina {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
+  }
+  .pieDepagina .logo {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .pieDepagina .redes {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .pieDepagina .texto {
+    display: flex;
+    grid-column: 1/5;
+    grid-row: 2;
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+  }
+  .pieDepagina .tel {
+    display: flex;
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .pieDepagina img {
+    width: 100px;
+    height: 32px;
+  }
+
+  /*NOSOTROS MOBILE*/
+  .principal-nosotros {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "foto foto foto" ". titulo ." ". texto ." ". boton .";
+  }
+  .principal-nosotros img {
+    width: 90%;
+  }
+  .principal-nosotros .titulo {
+    grid-area: titulo;
+    font-size: 40px;
+    font-weight: 700;
+    align-self: end;
+    padding-left: 0;
+  }
+  .principal-nosotros .texto {
+    grid-area: texto;
+    font-weight: 100;
+    padding-left: 30px;
+    font-family: "ubuntu-light";
+    padding-left: 0;
+  }
+  .principal-nosotros .boton {
+    grid-area: boton;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 26px;
+    width: 92px;
+  }
+
+  .pieDepagina {
+    margin-top: 40px;
+  }
+
+  /***PORTFOLIO MOBILE***/
+  .principal-portfolio {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .principal-portfolio .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+  .principal-portfolio .carousel {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .principal-portfolio .trabajos {
+    display: flex;
+    grid-column: 2;
+    justify-content: center;
+  }
+  .principal-portfolio .trabajo_hijo {
+    margin: 3px 5px;
+  }
+  .principal-portfolio img {
+    width: 290px;
+  }
+
+  .section-video {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    /*.solido-negro{
+        background-color: $color-fondo;
+        opacity: .5;
+        position: absolute;
+        z-index: 90;
+        width: 100%;
+        height: 32vh;
+    }*/
+  }
+  .section-video .video-home {
+    width: 100%;
+  }
+  .section-video .content {
+    position: absolute;
+    color: #000;
+    margin-left: 50px;
+    z-index: 100;
+    opacity: 0.7;
+  }
+  .section-video .titulo {
+    font-family: "ubuntu-bold";
+    font-size: 2em;
+    text-align: left;
+    line-height: 20px;
+  }
+
+  /***SERVICIOS MOBILE***/
+  .principal-servicio {
+    height: 190vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .principal-servicio .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .principal-servicio .servicios {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+  }
+
+  .servicio_hijo h2 {
+    font-size: 25px !important;
+    justify-content: center !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .servicio_hijo .texto {
+    text-align: center;
+  }
+
+  .servicio_hijo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .servicios-boot h1 {
+    height: 50px;
+  }
+
+  .servicios-boot .boton {
+    display: inline;
+  }
+
+  .principal-servicio .servicio_hijo {
+    width: 290px;
+    margin: 3px 5px 40px 5px;
+    text-align: center;
+  }
+
+  .principal-servicio img {
+    width: 180px;
+  }
+
+  .principal-servicio .boton {
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 26px;
+    width: 92px;
+    text-decoration: none;
+  }
+
+  .principal-servicio .texto {
+    margin-bottom: 15px;
+    font-family: "ubuntu-light";
+  }
+
+  /***CONTACTO MOBILE***/
+  .contacto {
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .contacto .titulo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .contacto .formulario {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .contacto .contacto img {
+    width: 100%;
+  }
+}
+/*TABLET*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .menu-v3ktor {
+    position: static;
+  }
+}
+/*******FIN MEDIA QUERIES********/
+
+/*# sourceMappingURL=estilos.css.map */

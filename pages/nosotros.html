@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/0f64a87ca3.js" crossorigin="anonymous"></script>
+    <title>Nosotros</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-light" href="../index.html"><img class="logo" src="../assets/logo_v3ktor_blanco.png" alt="v3ktor"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu-v3ktor" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Tarjeta con SASS vista en CLASE-->
+    <div class="tarjeta">
+        <img src="../assets/teatro-500.jpg" alt="Teatro">
+        <h6 class="titulo">Celta Decoraciones</h6>
+        <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sapiente laborum ut cumque hic. Cum, cupiditate laudantium.</p>
+        <button class="btn btn-outline-danger">VER MÁS</button>
+    </div>
+
+    <div class="tarjeta__2">
+        <img src="../assets/teatro-500.jpg" alt="Teatro">
+        <h6 class="titulo">Celta Decoraciones</h6>
+        <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sapiente laborum ut cumque hic. Cum, cupiditate laudantium.</p>
+        <button class="btn btn-outline-danger">VER MÁS</button>
+    </div>
+
+    <div class="tarjeta__3">
+        <img src="../assets/teatro-500.jpg" alt="Teatro">
+        <h6 class="titulo">Celta Decoraciones</h6>
+        <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sapiente laborum ut cumque hic. Cum, cupiditate laudantium.</p>
+        <button class="btn btn-outline-danger">VER MÁS</button>
+    </div>
+    <!--FIN TARJETA-->
+
+
+
+    <section class="quienes-home">
+        <h1 class="titulo">Soluciones Digitales</h1>
+        <p class="texto">Detrás de v3ktor hay un equipo de jóvenes creativos que piensa soluciones digitales para las marcas. Desde sitios web responsivos hasta campañas de email marketing El punto de partida de sus proyectos es la idea que cada cliente tiene en mente, por eso el resultado final es único y con su propia identidad.</p>
+        <img class="imagen-nosotros" src="../assets/img_nosotros_seccion.jpg" alt="Nosotros">
+        <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">CONSULTAS</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Envíenos su consulta</h5>
+                    <button type="button" class="boton cerrar" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="boton" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="boton">Enviar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="pieDepagina"> 
+        <div class="logo">
+            <img src="../assets/logo_v3ktor_negro.png" alt="v3ktor">
+        </div>
+        <p class="texto">2022 - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="tel">
+            <a href="tel:5491163683227"> Tel: +54 9 1163683227</a>
+        </div>
+    </footer>
+
+
+
+    <!--PRACTICA CLASE-->
+
+<!--
+    <div class="parrafos">
+        <p>primer parrafo</p>
+        <p>segundo parrafo</p>
+        <p>tercer parrafo</p>
+    </div>
+
+    <div class="elementos">
+        <p>primer parrafo</p>
+        <div>soy un div</div>
+        <p>segundo parrafo</p>
+        <span>soy un span</span>
+        <div>soy otro div</div>
+        <span>soy otro span</span>
+    </div>
+
+
+    <ul class="listas">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+    </ul>
+
+
+    <br><br><br><br><br><br><br>
+
+    <h4>Bootstrap Responsive</h4>
+
+    <nav>
+        <ul>
+            <li><a class="enlace" href="#">Link</a></li>
+            <li><a class="enlace" href="#">Link</a></li>
+            <li><a class="enlace" href="#">Link</a></li>
+            <li><a class="enlace" href="#">Link</a></li>
+            <li><a class="enlace" href="#">Link</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/img_nosotros.jpg" alt="nosotros">
+                    <div class="card-body">
+                        <h5 class="card-title">Nosotros</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic soluta atque ab architecto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/img_nosotros.jpg" alt="nosotros">
+                    <div class="card-body">
+                        <h5 class="card-title">Nosotros</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic soluta atque ab architecto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assets/img_nosotros.jpg" alt="nosotros">
+                    <div class="card-body">
+                        <h5 class="card-title">Nosotros</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic soluta atque ab architecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+-->
+    
+    <!--FIN PRACTICA CLASE-->
+
+
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

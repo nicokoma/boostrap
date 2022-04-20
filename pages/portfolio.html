@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/0f64a87ca3.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-light" href="../index.html"><img class="logo" src="../assets/logo_v3ktor_blanco.png" alt="v3ktor"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu-v3ktor" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--
+
+    <main class="principal-portfolio">
+        <h1 class="titulo">Portfolio</h1>
+        <div class="trabajos">
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/olson-500.jpg" alt="Olson"></a></div>
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/teatro-500.jpg" alt="Teatro"></a></div>
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/toyota-500.jpg" alt="Toyota"></a></div>
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/mc-1000.jpg" alt="Mc Donalds"></a></div>
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/celta-1000.jpg" alt="Celta"></a></div>
+            <div class="trabajo_hijo"><a href="#"><img src="../assets/manos-1000.jpg" alt="Manos"></a></div>
+        </div>
+    </main>
+    -->
+
+    
+    <main class="principal-portfolio">
+        <h1 class="titulo">Portfolio</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../assets/slider_toyota.png" class="d-block w-100" alt="Toyota">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>TOYOTA TREOS</h5>
+                        <p>Diseño y Desarrollo de sitio web.</p>
+                    </div>
+                </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/slider_gyps.jpg" class="d-block w-100" alt="Gyps Agency">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gyps Agency</h5>
+                        <p>Maquetado y desarrollo del sitio.</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                    <img src="../assets/slider_aia.jpg" class="d-block w-100" alt="Aliano Abogados">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Aliano Abogados</h5>
+                        <p>Diseño y Desarrollo de sitio web.</p>
+                    </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+
+
+    <section class="mastrabajos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 titulo">
+                    <h1 class="titulo">+trabajos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12"><img class="img-fluid" src="../assets/olson-500.jpg" alt="Olson"></div>
+                <div class="col-md-4 col-xs-12"><img class="img-fluid" src="../assets/mc-500.jpg" alt="Mc Donalds"></div>
+                <div class="col-md-4 col-xs-12"><img class="img-fluid" src="../assets/celta-500.jpg" alt="Celta Decoraciones"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pieDepagina"> 
+        <div class="logo">
+            <img src="../assets/logo_v3ktor_negro.png" alt="v3ktor">
+        </div>
+        <p class="texto">2022 - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="tel">
+            <a href="tel:5491163683227"> Tel: +54 9 1163683227</a>
+        </div>
+    </footer>
+    
+
+
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

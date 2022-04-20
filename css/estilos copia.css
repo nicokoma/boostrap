@@ -1,0 +1,1246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'ubuntu-regular';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'ubuntu-light';
+    src: url('../assets/fonts/Ubuntu-Light.ttf');
+}
+
+@font-face{
+    font-family: 'ubuntu-bold';
+    src: url('../assets/fonts/Ubuntu-Bold.ttf');
+}
+
+body{
+    font-family: 'ubuntu-regular';
+}
+
+h1, h2, p, button, a, .boton{
+    font-family: 'ubuntu-regular';;
+}
+
+
+
+/****HOME*****/
+
+header{
+    animation: fadeIn;
+    animation-duration: 1s;
+    
+}
+
+.encabezado .navbar-v3ktor{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-image: linear-gradient(black, rgb(32, 32, 32));
+    height: 65px;
+    align-items: center;
+    color: white;
+    font-family: 'ubuntu-regular';
+}
+
+.menu-v3ktor{
+    position: absolute;
+    right: 2%;
+}
+
+
+.navbar-v3ktor a{
+    color: white !important;
+    border-radius: 20px;
+}
+
+.navbar-v3ktor a:hover{
+    color: rgb(152, 152, 152);
+    background-color: rgb(77, 77, 77);
+    border-radius: 20px;
+
+}
+
+
+.encabezado .menu-bar{
+    color: white;
+    display: none;
+}
+
+
+
+
+.encabezado .logo{
+    display: flex;
+    width: 90px;
+    height: 30px;
+    grid-column: 2/3;
+
+
+    
+}
+
+.encabezado .menu{
+    color: white;
+    font-size: 14px;
+    display: flex;
+    grid-column: 8/12;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    transition: all 500ms;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.menu a:hover{
+    color: rgb(152, 152, 152);
+    transform: translate(0px, 10px);
+    background-color: rgb(77, 77, 77);
+    border-radius: 20px;
+
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: repeat(8,1fr);
+    height: 100vh;
+    justify-items: center;
+    background-image: url(../assets/img_index.jpg);
+    background-size: cover;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+
+    @keyframes opacidad {
+        from {
+        opacity: .5;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+
+
+.principal .logo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+    animation-name: opacidad;
+    animation-play-state:running;
+    animation-timing-function: ease-in;
+    animation-duration: 300ms;
+    animation-delay: 600ms;
+
+    
+}
+
+.principal .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 5;
+    animation: flash;
+    animation-duration: 300ms;
+    animation-delay: 1s;
+
+}
+
+
+.quienes-home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6,1fr);
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.quienes-home .titulo{
+    display: flex;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    align-items: end;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.quienes-home .texto{
+    display: flex;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    font-family: 'ubuntu-light';
+    line-height: 24px;
+}
+
+.quienes-home img{
+    display: flex;
+    grid-column: 6/9;
+    grid-row: 2/6;
+}
+
+.quienes-home a{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-image: linear-gradient(black, rgb(23, 23, 23));
+    border: 1px solid black;
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+.quienes-home a:hover{
+    background-image: linear-gradient(rgb(48, 48, 48), black );
+    color: white;
+}   
+
+
+.quienes-home button{
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    padding: 13px;
+    box-sizing: border-box;
+    color: white;
+    background-image: linear-gradient(black, rgb(23, 23, 23));
+    border: none;
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+.quienes-home .cerrar{
+    margin-top: 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+.portfolio-home{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolio-home .titulo{
+    color: white;
+    display: flex;
+    grid-column: 6/8;
+    grid-row: 2;
+    font-size: 40px;
+    font-weight: 800;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.portfolio-home .trabajos{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 3/11;
+    grid-row: 3;
+    justify-content: center;
+
+}
+
+.portfolio-home .trabajo_hijo{
+    margin: 3px 5px;
+}
+
+
+.portfolio-home img{
+    width: 290px;
+}
+
+
+
+
+
+
+
+
+.servicios-home{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: 100vh;
+    justify-items: center;
+}
+
+.servicios-home .titulo{
+    display: flex;
+    grid-column: 5;
+    grid-row: 2;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.servicios-home .servicios{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/12;
+    grid-row: 3/5;
+}
+
+.servicios-home .hijo{
+    
+    width: 300px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.titulo-servicio h2{
+    font-family: 35px !important;
+}
+
+.servicios-home .texto{
+    margin: 10px 0 20px 0;
+    line-height: 25px;
+}
+
+
+.servicios-home img{
+    width: 150px;
+}
+
+.servicios-home  a{
+    box-sizing: border-box;
+    background-image: linear-gradient(black, rgb(27, 27, 27));
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.servicios-home a:hover{
+    background-image: linear-gradient(rgb(28, 28, 28), black);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.pieDepagina{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-items: center;
+    align-items: center;
+    height: 70px;
+    border-top: 1px solid black;
+}
+
+.pieDepagina .logo{
+    display: flex;
+    width: 90px;
+    height: 40px;
+    grid-column: 2;
+}
+
+.pieDepagina .texto{
+    display: flex;
+    grid-column: 4/7;
+    font-size: 14px;
+}
+
+.pieDepagina .redes{
+    display: flex;
+    grid-column: 8/9;
+    justify-content:space-around ;
+    
+}
+
+.pieDepagina .fa-brands {
+    margin: 0 10px;
+    
+    
+}
+
+.pieDepagina a{
+    color: black;
+    text-decoration: none;
+}
+
+.pieDepagina a:hover{
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+}
+
+.pieDepagina .tel{
+    display: flex;
+    grid-column: 10/12;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+/******NOSOTROS********/
+
+.quienes-home .imagen-nosotros{
+    width: 500px;
+}
+
+
+
+/***PORTFOLIO***/
+
+.principal-portfolio{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.principal-portfolio .titulo{
+    display: flex;
+    grid-column: 6/8;
+    grid-row: 2;
+    font-size: 40px;
+    font-weight: 800;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.principal-portfolio .trabajos{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2/12;
+    grid-row: 3;
+    justify-content: center;
+
+}
+
+.principal-portfolio .trabajo_hijo{
+    margin: 3px 5px;
+}
+
+
+.principal-portfolio img{
+    width: 290px;
+}
+
+
+.carousel{
+    display: flex;
+    grid-column: 2/12;
+    grid-row: 3/4;
+}
+
+.mastrabajos{
+    margin-bottom: 40px;
+}
+
+.mastrabajos .titulo{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/***SERVICIOS***/
+
+.servicios-boot{
+    height: 100vh;
+}
+
+.servicios-boot h1{
+    text-align: center;
+    height: 100px;
+}
+
+.servicios-boot img{
+    width: 200px;
+}
+
+.servicios-boot .boton{
+    margin-top: 20px;
+    width: 100px;
+    height: 48px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-image: linear-gradient(black, rgb(23, 23, 23));
+    border: 1px solid black;
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.principal-servicio{
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.principal-servicio .titulo{
+    display: flex;
+    grid-column: 6/8;
+    grid-row: 2;
+    font-size: 40px;
+    font-weight: 800;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+.principal-servicio .servicios{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2/12;
+    grid-row: 4;
+    justify-content: center;
+
+}
+
+.servicio_hijo h2{
+    font-size: 25px !important;
+    justify-content: start !important;
+
+}
+
+.principal-servicio .servicio_hijo{
+    width: 290px;
+    margin: 3px 5px;
+}
+
+
+.principal-servicio img{
+    width: 180px;
+}
+
+
+
+.principal-servicio a{
+    margin-top: 20px;
+    width: 100px;
+    height: 48px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-image: linear-gradient(black, rgb(23, 23, 23));
+    border: 1px solid black;
+    display: flex;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+.principal-servicio a:hover{
+    background-image: linear-gradient(rgb(48, 48, 48), black );
+    color: white;
+}
+
+
+
+
+
+.principal-servicio .texto{
+    margin-bottom: 15px;
+    font-family: 'ubuntu-light';
+    line-height: 25px;
+}
+
+
+
+
+
+/***CONTACTO***/
+
+.contacto{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6,1fr);
+    
+}
+
+.contacto .titulo{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 3;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.contacto .formulario{
+    grid-column: 2/6;
+    grid-row: 4/5;
+}
+
+.contacto .imagen{
+    grid-column: 6/10;
+    grid-row: 2/5;
+}
+
+/*
+.contacto img{
+    width: 100%;
+}*/
+
+.contacto fieldset{
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+
+.contacto .boton{
+    
+    text-align: center;
+    padding: 5px 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 45px;
+    width: 92px;
+    text-decoration: none;
+}
+
+
+.contacto .campo-texto{
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 14px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+
+}
+
+
+.contacto textarea{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/********MEDIA QUERIES*********/
+
+/*MOBILE*/
+@media screen and (max-width: 600px){
+
+    .encabezado .navbar-v3ktor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: black;
+        height: 70px;
+        align-items: center;
+    }
+
+    .encabezado .menu{
+        display: none;
+    }
+
+    .encabezado .logo{
+        display: flex;
+        grid-column: 1;
+    }
+
+    .menu-v3ktor{
+        position: static;
+    }
+
+    .encabezado .menu-bar{
+        color: white;
+        display: flex;
+        grid-column: 4;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .principal{
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: repeat(8,1fr);
+        height: 100vh;
+        justify-items: center;
+        background-image: url(../assets/img_index.jpg);
+        background-size: cover;
+    }
+    
+    .principal .logo{
+        width: 300px;
+        display: flex;
+        grid-column: 2;
+        grid-row: 4;
+        
+    }
+
+    .principal .titulo{
+        display: flex;
+        font-size: 20px;
+    }
+
+
+    .quienes-home{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: repeat(6,1fr);
+    }
+    
+    .quienes-home .titulo{
+        display: flex;
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .quienes-home .texto{
+        display: flex;
+        grid-column: 2;
+        grid-row: 3/4;
+        font-family: 'ubuntu-light';
+    }
+    
+    .quienes-home .imagen-nosotros{
+        display: flex;
+        grid-column: 2;
+        grid-row: 5;
+        width: 300px;
+        justify-self: center;
+    }
+
+
+    .quienes-home img{
+        display: flex;
+        grid-column: 6/9;
+        grid-row: 2/6;
+    }
+    
+
+
+
+.portfolio-home{
+    background-color: black;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolio-home .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.portfolio-home .trabajos{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2;
+    grid-row: 3/6;
+    justify-content: center;
+
+}
+
+.portfolio-home .trabajo_hijo{
+    margin: 3px 5px;
+}
+
+
+.portfolio-home img{
+    width: 290px;
+}
+
+
+.mastrabajos .img-fluid{
+    margin: 20px 0;
+}
+
+
+
+
+.servicios-boot{
+    height: 100%;
+}
+
+
+
+.servicios-home{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6,1fr);
+    height: 170vh;
+    justify-items: center;
+}
+
+.servicios-home .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.servicios-home .servicios{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+.servicios-home .hijo{
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+    .pieDepagina{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 2;
+        align-items: center;
+        justify-items: center;
+        height: 100px;
+    }
+
+    .pieDepagina .logo{
+        display: flex;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .pieDepagina .redes{
+        display: flex;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .pieDepagina .texto{
+        display: flex;
+        grid-column: 1/5;
+        grid-row: 2;
+        font-size: 12px;
+        text-align: center;
+        color: #777;
+    }
+
+    .pieDepagina .tel{
+        display: flex;
+        grid-column: 3;
+        grid-row: 1;
+        text-align: right;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    .pieDepagina img{
+    width: 100px;
+    height: 32px;
+    }
+
+
+
+
+/*NOSOTROS MOBILE*/
+
+    .principal-nosotros{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "foto foto foto"
+                             ". titulo ."
+                             ". texto ."
+                             ". boton ."
+        ;
+    }
+
+
+    .principal-nosotros img{
+        width: 90%;
+    }
+    
+
+    .principal-nosotros .titulo{
+        grid-area: titulo;
+        font-size: 40px;
+        font-weight: 700;
+        align-self: end;
+        padding-left: 0;
+        
+    }
+
+
+    .principal-nosotros .texto{
+        grid-area: texto;
+        font-weight: 100;
+        padding-left: 30px;
+        font-family: 'ubuntu-light';
+        padding-left: 0;
+    }
+
+
+    .principal-nosotros .boton{
+        grid-area: boton;
+        text-align: center;
+        margin:20px 0 0 0;
+        padding: 5px;
+        background-color: black;
+        border: none;
+        color: white;
+        height: 26px;
+        width: 92px;
+    }
+
+    .pieDepagina{
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+
+
+/***PORTFOLIO MOBILE***/
+
+.principal-portfolio{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.principal-portfolio .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    
+}
+
+.principal-portfolio .carousel{
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.principal-portfolio .trabajos{
+    display: flex;
+    grid-column: 2;
+    justify-content: center;
+
+}
+
+.principal-portfolio .trabajo_hijo{
+    margin: 3px 5px;
+}
+
+
+.principal-portfolio img{
+    width: 290px;
+}
+
+
+
+
+
+
+
+/***SERVICIOS MOBILE***/
+
+.principal-servicio{
+    height: 190vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.principal-servicio .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.principal-servicio .servicios{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+
+}
+
+.servicio_hijo h2{
+    font-size: 25px !important;
+    justify-content: center !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+.servicio_hijo .texto{
+    text-align: center;
+}
+
+.servicio_hijo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicios-boot h1{
+    height: 50px;
+}
+
+.servicios-boot .boton{
+    display: inline;
+}
+
+.principal-servicio .servicio_hijo{
+    width: 290px;
+    margin: 3px 5px 40px 5px;
+    text-align: center;
+
+}
+
+
+.principal-servicio img{
+    width: 180px;
+}
+
+
+.principal-servicio .boton{
+    
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 26px;
+    width: 92px;
+    text-decoration: none;
+}
+
+.principal-servicio .texto{
+    margin-bottom: 15px;
+    font-family: 'ubuntu-light';
+}
+
+
+
+
+
+
+
+/***CONTACTO MOBILE***/
+
+
+.contacto{
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: repeat(6,1fr);
+    
+}
+
+.contacto .titulo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.contacto .formulario{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.contacto .imagen{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto img{
+    width: 100%;
+}
+
+}
+
+
+/*TABLET*/
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .menu-v3ktor{
+        position: static;
+    }
+}
+
+
+
+
+/*******FIN MEDIA QUERIES********/
+
+
+
+
+/*******PRACTICA CLASE********/
+
+/*
+
+.enlace:active{
+    background: black;
+}
+
+.enlace:link{
+    text-decoration: none;
+    color: blue;
+}
+
+.enlace:visited{
+    color: red;
+}
+
+.enlace:hover{
+    color: green;
+}
+
+.parrafos{
+    background-color: aqua;
+    padding: 10px;
+    width: 50%;
+    margin: 25px auto;
+}
+
+.parrafos p:first-child{
+    background-color: blueviolet;
+}
+
+.parrafos p:last-child{
+    background-color: coral;
+}
+
+
+.elementos{
+    background-color: aqua;
+    padding: 10px;
+    width: 50%;
+    margin: 25px auto;
+}
+
+.elementos p:last-of-type{
+    background-color: red;
+}
+
+
+.listas{
+    background-color: aqua;
+    padding: 10px;
+    width: 50%;
+    margin: 25px auto;
+}
+
+.listas :nth-child(even){
+    background-color: blue;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+.listas :nth-last-child(1){
+    background-color: red;
+    color: white;
+    list-style-type: none;
+}
+
+.listas :nth-child(1){
+    background-color: green;
+}
+
+.formulario .nombre:focus{
+    border: 2px solid red;
+}
+
+.formulario .email:invalid{
+    border: 3px solid red;
+}
+
+
+*/
+
+

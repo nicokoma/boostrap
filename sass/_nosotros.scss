@@ -1,0 +1,146 @@
+//Declaracion de variables
+$espaciado-card: 20px auto;
+$relleno-card: 25px;
+$fondo-tarjeta: #549382;
+$color-title: #FFFFFF;
+
+
+//Estilos
+.tarjeta{
+    width:50%;
+    margin: $espaciado-card;
+    padding: $relleno-card;
+    background: $fondo-tarjeta;
+    border-radius: 10px;
+
+}
+
+.tarjeta img{
+    width:100%;
+    border-radius:10px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta .titulo{
+    margin:10px 0;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: $color-title;
+    font-weight:700;
+    font-family: $tipografia-v3ktor-bold;
+}
+
+.tarjeta .texto{
+    font-size: 18px;
+    font-weight: 200;
+    font-family: $tipografia-v3ktor;
+
+}
+
+//EXTEND
+.tarjeta__2{
+    @extend .tarjeta;
+}
+
+.tarjeta__3{
+    @extend .tarjeta;
+}
+
+
+//CONDICIONALES - IF
+
+$color-fondo2: black;
+$relleno:10px;
+
+h1{
+    @if ($color-fondo2 == red) {
+        color: blue;
+        background-color: green;
+        text-align: center;
+        padding: $relleno;
+    } 
+    @else if $color-fondo2 == blue{
+        color: #935454;
+    }
+    @else{
+        color: $color-fondo2;
+        ;        
+    }
+}
+
+//CICLO - FOR
+
+@for $i from 1 through 10{
+    .col-#{$i}{
+        width: $i * 10%;
+    }
+}
+
+
+//EACH
+
+$arreglo-colores:(
+    gris-1: rgb(93, 93, 93),
+    gris-2: rgb(160, 160, 160),
+    gris-3: rgb(50, 50, 50)
+);
+
+@each $color, $valor in $arreglo-colores {
+    .fondo-#{$color}{
+        background-color: $valor;
+    }
+}
+
+
+//EACH 2
+
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    send-email: #c25e30
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+
+//MAPS
+
+$paleta: (
+    'primario': green,
+    'secundario': blue,
+    'succes': pink
+
+);
+
+div{
+    background-color: map-get($map: $paleta, $key: 'primario' );
+    color: map-get($map: $paleta, $key: 'secundario' );
+    border-color: map-get($map: $paleta, $key: 'succes' ) ;
+}
+
+
+//MIXINS CON PARAMETROS
+
+@mixin fuente ($color-fuente, $transformacion) {
+    text-transform: $transformacion;
+    color: $color-fuente;
+}
+
+h1{
+    font: 20px;
+    @include fuente(red, uppercase)
+}
+
+h2{
+    font-size: 15px;
+    @include fuente(green, uppercase)
+}
+
+h3{
+    font-size: 10px;
+    @include fuente(blue, lowercase)
+}
