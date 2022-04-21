@@ -418,6 +418,7 @@ header{
 
     .hijo{
         width: 300px;
+        height: 400px;
         margin: 0 20px;
         text-align: center;
         &:hover{
@@ -939,7 +940,7 @@ header{
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6,1fr);
-    height: 190vh;
+    height: 210vh;
     justify-items: center;
 
     .titulo{

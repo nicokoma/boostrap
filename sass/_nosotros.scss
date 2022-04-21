@@ -7,7 +7,7 @@ $color-title: #FFFFFF;
 
 //Estilos
 .tarjeta{
-    width:50%;
+    width:100%;
     margin: $espaciado-card;
     padding: $relleno-card;
     background: $fondo-tarjeta;
@@ -116,15 +116,16 @@ $paleta: (
 
 );
 
-div{
+/*div{
     background-color: map-get($map: $paleta, $key: 'primario' );
     color: map-get($map: $paleta, $key: 'secundario' );
     border-color: map-get($map: $paleta, $key: 'succes' ) ;
-}
+}*/
 
 
 //MIXINS CON PARAMETROS
 
+/*
 @mixin fuente ($color-fuente, $transformacion) {
     text-transform: $transformacion;
     color: $color-fuente;
@@ -143,4 +144,4 @@ h2{
 h3{
     font-size: 10px;
     @include fuente(blue, lowercase)
-}
+}*/

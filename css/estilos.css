@@ -1,5 +1,5 @@
 .tarjeta, .tarjeta__3, .tarjeta__2 {
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
   padding: 25px;
   background: #549382;
@@ -95,30 +95,31 @@ h1 {
   background-color: #c25e30;
 }
 
-div {
-  background-color: green;
-  color: blue;
-  border-color: pink;
+/*div{
+    background-color: map-get($map: $paleta, $key: 'primario' );
+    color: map-get($map: $paleta, $key: 'secundario' );
+    border-color: map-get($map: $paleta, $key: 'succes' ) ;
+}*/
+/*
+@mixin fuente ($color-fuente, $transformacion) {
+    text-transform: $transformacion;
+    color: $color-fuente;
 }
 
-h1 {
-  font: 20px;
-  text-transform: uppercase;
-  color: red;
+h1{
+    font: 20px;
+    @include fuente(red, uppercase)
 }
 
-h2 {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: green;
+h2{
+    font-size: 15px;
+    @include fuente(green, uppercase)
 }
 
-h3 {
-  font-size: 10px;
-  text-transform: lowercase;
-  color: blue;
-}
-
+h3{
+    font-size: 10px;
+    @include fuente(blue, lowercase)
+}*/
 nav {
   background-color: #000;
 }
@@ -440,6 +441,7 @@ header {
 }
 .servicios-home .hijo {
   width: 300px;
+  height: 400px;
   margin: 0 20px;
   text-align: center;
 }
@@ -836,7 +838,7 @@ header {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6, 1fr);
-    height: 190vh;
+    height: 210vh;
     justify-items: center;
   }
   .servicios-home .titulo {
