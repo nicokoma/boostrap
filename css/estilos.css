@@ -410,6 +410,24 @@ header {
   margin: 3px 5px;
 }
 
+.cliente a {
+  margin-left: -12px;
+  opacity: 0;
+  transition: 100ms;
+  position: absolute;
+  width: 320px;
+  height: 250px;
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+.cliente:hover a {
+  margin-left: -12px;
+  opacity: 0.8;
+}
+
 .titulo-servicio h2 {
   font-family: 30px;
 }
@@ -444,6 +462,7 @@ header {
   height: 400px;
   margin: 0 20px;
   text-align: center;
+  transition: 200ms;
 }
 .servicios-home .hijo:hover {
   background-color: rgb(0, 0, 0);
