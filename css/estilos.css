@@ -175,8 +175,20 @@ h1 {
   font-size: 40px;
 }
 
-h1, h2, p, button, a, .boton {
+h1, h2, p, button, a, .boton, .servicios-home a, .cliente a, .quienes-home button, .quienes-home a {
   font-family: "ubuntu-regular";
+}
+
+/****BOTON*****/
+.boton, .servicios-home a, .cliente a, .quienes-home button, .quienes-home a {
+  width: 120px;
+  height: 50px;
+  padding: 13px;
+  box-sizing: border-box;
+  color: #FFF;
+  background: #000;
+  border: none;
+  text-decoration: none;
 }
 
 /****HOME*****/
@@ -308,13 +320,6 @@ header {
 }
 .quienes-home a {
   margin-top: 20px;
-  width: 100px;
-  height: 40px;
-  padding: 10px;
-  box-sizing: border-box;
-  color: #FFF;
-  background-image: linear-gradient(black, rgb(23, 23, 23));
-  border: 1px solid #000;
   display: flex;
   grid-column: 2;
   grid-row: 4;
@@ -327,13 +332,6 @@ header {
 }
 .quienes-home button {
   margin-top: 20px;
-  width: 120px;
-  height: 50px;
-  padding: 13px;
-  box-sizing: border-box;
-  color: #FFF;
-  background: #000;
-  border: none;
   display: flex;
   grid-column: 2;
   grid-row: 4;
@@ -410,21 +408,18 @@ header {
   margin: 3px 5px;
 }
 
-.cliente a {
-  margin-left: -12px;
+.cliente div {
   opacity: 0;
   transition: 100ms;
   position: absolute;
   width: 320px;
   height: 250px;
   background-color: black;
-  box-sizing: border-box;
   color: white;
   text-decoration: none;
-}
-
-.cliente:hover a {
   margin-left: -12px;
+}
+.cliente:hover div {
   opacity: 0.8;
 }
 
@@ -489,14 +484,6 @@ header {
 }
 .servicios-home img {
   width: 150px;
-}
-.servicios-home a {
-  box-sizing: border-box;
-  background: #000;
-  border: 1px solid black;
-  color: #FFF;
-  text-decoration: none;
-  padding: 10px;
 }
 .servicios-home a:hover {
   background: rgb(23, 23, 23);
@@ -630,7 +617,7 @@ header {
 .servicios-boot img {
   width: 200px;
 }
-.servicios-boot .boton {
+.servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a {
   margin-top: 20px;
   width: 100px;
   height: 48px;
@@ -673,7 +660,7 @@ header {
   grid-column: 6/10;
   grid-row: 2/5;
 }
-.contacto .boton {
+.contacto .boton, .contacto .quienes-home a, .quienes-home .contacto a, .contacto .quienes-home button, .quienes-home .contacto button, .contacto .cliente a, .cliente .contacto a, .contacto .servicios-home a, .servicios-home .contacto a {
   text-align: center;
   padding: 5px 10px;
   background-color: black;
@@ -941,7 +928,7 @@ header {
     font-family: "ubuntu-light";
     padding-left: 0;
   }
-  .principal-nosotros .boton {
+  .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a, .principal-nosotros .servicios-home a, .servicios-home .principal-nosotros a {
     grid-area: boton;
     text-align: center;
     margin: 20px 0 0 0;
@@ -1063,7 +1050,7 @@ header {
     height: 50px;
   }
 
-  .servicios-boot .boton {
+  .servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a {
     display: inline;
   }
 
@@ -1075,18 +1062,6 @@ header {
 
   .principal-servicio img {
     width: 180px;
-  }
-
-  .principal-servicio .boton {
-    text-align: center;
-    margin: 10px 0 0 0;
-    padding: 5px;
-    background-color: black;
-    border: none;
-    color: white;
-    height: 26px;
-    width: 92px;
-    text-decoration: none;
   }
 
   .principal-servicio .texto {

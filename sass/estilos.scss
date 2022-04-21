@@ -76,6 +76,19 @@ h1, h2, p, button, a, .boton{
     font-family: $tipografia-v3ktor;
 }
 
+/****BOTON*****/
+.boton{
+    width: 120px;
+    height: 50px;
+    padding: 13px;
+    box-sizing: border-box;
+    color: $color-fuentes-b;
+    background:$color-fondo;
+    border: none;
+    text-decoration: none;
+}
+
+
 
 
 /****HOME*****/
@@ -240,14 +253,8 @@ header{
     }
     
     a{
+        @extend .boton;
         margin-top: 20px;
-        width: 100px;
-        height: 40px;
-        padding: 10px;
-        box-sizing: border-box;
-        color: $color-fuentes-b;
-        background-image: linear-gradient(black, rgb(23, 23, 23));
-        border: 1px solid $color-fondo;
         display: flex;
         grid-column: 2;
         grid-row: 4;
@@ -262,14 +269,8 @@ header{
     }   
 
     button{
+        @extend .boton;
         margin-top: 20px;
-        width: 120px;
-        height: 50px;
-        padding: 13px;
-        box-sizing: border-box;
-        color: $color-fuentes-b;
-        background:$color-fondo;
-        border: none;
         display: flex;
         grid-column: 2;
         grid-row: 4;
@@ -380,24 +381,34 @@ header{
     
 }
 
-.cliente a {
-    margin-left: -12px;
-    opacity: 0;
-    transition: 100ms;
-    position: absolute;
-    width: 320px;
-    height: 250px;
-    background-color: black;
-    box-sizing: border-box;
-    color: white;
-    text-decoration: none;
-    
-}
+
+
 
 .cliente{
+
+
+    div {
+        opacity: 0;
+        transition: 100ms;
+        position: absolute;
+        width: 320px;
+        height: 250px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        margin-left: -12px;
+        
+    
+    }
+
+    a{
+
+        @extend .boton;
+    }
+
+
     &:hover{
-        a{
-            margin-left: -12px;
+        div{
             opacity: .8;
         }
     }
@@ -480,12 +491,7 @@ header{
     }
     
     a{
-        box-sizing: border-box;
-        background: $color-fondo;
-        border: 1px solid black;
-        color: $color-fuentes-b;
-        text-decoration: none;
-        padding: 10px;
+        @extend .boton;
     }
 
     a:hover{
@@ -1246,19 +1252,6 @@ header{
     width: 180px;
 }
 
-
-.principal-servicio .boton{
-    
-    text-align: center;
-    margin: 10px 0 0 0;
-    padding: 5px;
-    background-color: black;
-    border: none;
-    color: white;
-    height: 26px;
-    width: 92px;
-    text-decoration: none;
-}
 
 .principal-servicio .texto{
     margin-bottom: 15px;
