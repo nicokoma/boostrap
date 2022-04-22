@@ -107,41 +107,5 @@ $redes: (
 }
 
 
-//MAPS
-
-$paleta: (
-    'primario': green,
-    'secundario': blue,
-    'succes': pink
-
-);
-
-/*div{
-    background-color: map-get($map: $paleta, $key: 'primario' );
-    color: map-get($map: $paleta, $key: 'secundario' );
-    border-color: map-get($map: $paleta, $key: 'succes' ) ;
-}*/
 
 
-//MIXINS CON PARAMETROS
-
-/*
-@mixin fuente ($color-fuente, $transformacion) {
-    text-transform: $transformacion;
-    color: $color-fuente;
-}
-
-h1{
-    font: 20px;
-    @include fuente(red, uppercase)
-}
-
-h2{
-    font-size: 15px;
-    @include fuente(green, uppercase)
-}
-
-h3{
-    font-size: 10px;
-    @include fuente(blue, lowercase)
-}*/

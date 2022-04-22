@@ -95,31 +95,6 @@ h1 {
   background-color: #c25e30;
 }
 
-/*div{
-    background-color: map-get($map: $paleta, $key: 'primario' );
-    color: map-get($map: $paleta, $key: 'secundario' );
-    border-color: map-get($map: $paleta, $key: 'succes' ) ;
-}*/
-/*
-@mixin fuente ($color-fuente, $transformacion) {
-    text-transform: $transformacion;
-    color: $color-fuente;
-}
-
-h1{
-    font: 20px;
-    @include fuente(red, uppercase)
-}
-
-h2{
-    font-size: 15px;
-    @include fuente(green, uppercase)
-}
-
-h3{
-    font-size: 10px;
-    @include fuente(blue, lowercase)
-}*/
 nav {
   background-color: #000;
 }
@@ -175,12 +150,30 @@ h1 {
   font-size: 40px;
 }
 
-h1, h2, p, button, a, .boton, .servicios-home a, .cliente a, .quienes-home button, .quienes-home a {
+h1, h2, p, button, a, .boton, .servicios-home a, .servicios a, .cliente a, .quienes-home button, .quienes-home a {
   font-family: "ubuntu-regular";
 }
 
+h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
 /****BOTON*****/
-.boton, .servicios-home a, .cliente a, .quienes-home button, .quienes-home a {
+.boton, .servicios-home a, .servicios a, .cliente a, .quienes-home button, .quienes-home a {
   width: 120px;
   height: 50px;
   padding: 13px;
@@ -427,65 +420,65 @@ header {
   font-family: 30px;
 }
 
-.servicios-home {
+.servicios-home, .servicios {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(6, 1fr);
   height: 100vh;
   justify-items: center;
 }
-.servicios-home .icon-serv {
+.servicios-home .icon-serv, .servicios .icon-serv {
   font-size: 9em;
   margin: 20px 0;
   color: black;
 }
-.servicios-home .titulo {
+.servicios-home .titulo, .servicios .titulo {
   display: flex;
   grid-column: 5;
   grid-row: 2;
   margin-top: 20px;
   font-size: 40px;
 }
-.servicios-home .servicios {
+.servicios-home .servicios, .servicios .servicios {
   display: flex;
   flex-direction: row;
   grid-column: 1/12;
   grid-row: 3/6;
 }
-.servicios-home .hijo {
+.servicios-home .hijo, .servicios .hijo {
   width: 300px;
   height: 400px;
   margin: 0 20px;
   text-align: center;
   transition: 200ms;
 }
-.servicios-home .hijo:hover {
+.servicios-home .hijo:hover, .servicios .hijo:hover {
   background-color: rgb(0, 0, 0);
 }
-.servicios-home .hijo:hover .texto {
+.servicios-home .hijo:hover .texto, .servicios .hijo:hover .texto {
   color: white;
 }
-.servicios-home .hijo:hover .titulo-servicio {
+.servicios-home .hijo:hover .titulo-servicio, .servicios .hijo:hover .titulo-servicio {
   color: white;
 }
-.servicios-home .hijo:hover .icon-serv {
+.servicios-home .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
   color: white;
 }
-.servicios-home .hijo:hover a {
+.servicios-home .hijo:hover a, .servicios .hijo:hover a {
   border: 1px solid white;
 }
-.servicios-home .hijo:hover a:hover {
+.servicios-home .hijo:hover a:hover, .servicios .hijo:hover a:hover {
   background: rgb(255, 255, 255);
   color: #000;
 }
-.servicios-home .texto {
+.servicios-home .texto, .servicios .texto {
   margin: 10px 0 20px 0;
   line-height: 25px;
 }
-.servicios-home img {
+.servicios-home img, .servicios img {
   width: 150px;
 }
-.servicios-home a:hover {
+.servicios-home a:hover, .servicios a:hover {
   background: rgb(23, 23, 23);
   color: #FFF;
 }
@@ -556,6 +549,7 @@ header {
   text-decoration: none;
 }
 
+/******FIN HOME********/
 /******NOSOTROS********/
 .quienes-home .imagen-nosotros {
   width: 500px;
@@ -607,35 +601,22 @@ header {
 }
 
 /***SERVICIOS***/
-.servicios-boot {
-  height: 100vh;
-}
-.servicios-boot h1 {
-  text-align: center;
-  height: 100px;
-}
-.servicios-boot img {
-  width: 200px;
-}
-.servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a {
-  margin-top: 20px;
-  width: 100px;
-  height: 48px;
-  padding: 10px;
-  box-sizing: border-box;
-  color: white;
-  background-image: linear-gradient(black, rgb(23, 23, 23));
-  border: 1px solid black;
-  display: flex;
-  grid-column: 2;
-  grid-row: 4;
-  justify-content: center;
-  text-decoration: none;
+.servicios {
+  margin-top: 40px;
+  height: 80vh;
 }
 
 .servicio_hijo h2 {
   font-size: 25px !important;
   justify-content: start !important;
+}
+
+.hijo {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.hijo .icon-serv {
+  color: rgb(0, 0, 0);
 }
 
 /***CONTACTO***/
@@ -660,7 +641,7 @@ header {
   grid-column: 6/10;
   grid-row: 2/5;
 }
-.contacto .boton, .contacto .quienes-home a, .quienes-home .contacto a, .contacto .quienes-home button, .quienes-home .contacto button, .contacto .cliente a, .cliente .contacto a, .contacto .servicios-home a, .servicios-home .contacto a {
+.contacto .boton, .contacto .quienes-home a, .quienes-home .contacto a, .contacto .quienes-home button, .quienes-home .contacto button, .contacto .cliente a, .cliente .contacto a, .contacto .servicios-home a, .servicios-home .contacto a, .contacto .servicios a, .servicios .contacto a {
   text-align: center;
   padding: 5px 10px;
   background-color: black;
@@ -840,27 +821,27 @@ header {
     height: 100%;
   }
 
-  .servicios-home {
+  .servicios-home, .servicios {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6, 1fr);
     height: 210vh;
     justify-items: center;
   }
-  .servicios-home .titulo {
+  .servicios-home .titulo, .servicios .titulo {
     display: flex;
     grid-column: 2;
     grid-row: 1;
     margin-top: 20px;
     font-size: 30px;
   }
-  .servicios-home .servicios {
+  .servicios-home .servicios, .servicios .servicios {
     display: flex;
     flex-direction: column;
     grid-column: 2;
     grid-row: 2;
   }
-  .servicios-home .hijo {
+  .servicios-home .hijo, .servicios .hijo {
     margin: 30px 0;
   }
 
@@ -928,7 +909,7 @@ header {
     font-family: "ubuntu-light";
     padding-left: 0;
   }
-  .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a, .principal-nosotros .servicios-home a, .servicios-home .principal-nosotros a {
+  .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a, .principal-nosotros .servicios-home a, .servicios-home .principal-nosotros a, .principal-nosotros .servicios a, .servicios .principal-nosotros a {
     grid-area: boton;
     text-align: center;
     margin: 20px 0 0 0;
@@ -1046,7 +1027,7 @@ header {
     height: 50px;
   }
 
-  .servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a {
+  .servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a, .servicios-boot .servicios a, .servicios .servicios-boot a {
     display: inline;
   }
 

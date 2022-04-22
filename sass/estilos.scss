@@ -24,6 +24,8 @@ nav{
 
 
 
+
+
 //ALINEACIONES
 .center{
     text-align: center;
@@ -75,6 +77,38 @@ h1{
 h1, h2, p, button, a, .boton{
     font-family: $tipografia-v3ktor;
 }
+
+
+
+
+//MIXINS CON PARAMETROS
+
+
+@mixin fuente ($color-fuente, $transformacion) {
+    text-transform: $transformacion;
+    color: $color-fuente;
+}
+
+h1{
+    font-size: $tamano-h1;
+    @include fuente(rgb(0, 0, 0), capitalize)
+}
+
+h2{
+    font-size: $tamano-h2;
+    @include fuente(rgb(0, 0, 0), capitalize)
+}
+
+h3{
+    font-size: $tamano-h3;
+    @include fuente(rgb(0, 0, 0), uppercase)
+}
+
+
+
+
+
+
 
 /****BOTON*****/
 .boton{
@@ -587,6 +621,15 @@ header{
     }
 }
 
+/******FIN HOME********/
+
+
+
+
+
+
+
+
 
 /******NOSOTROS********/
 
@@ -658,43 +701,35 @@ header{
 
 /***SERVICIOS***/
 
-.servicios-boot{
-    height: 100vh;
+.servicios{
+@extend .servicios-home;
+margin-top: 40px;
+height: 80vh;
 
-    h1{
-        text-align: center;
-        height: 100px;
-    }
-
-    img{
-        width: 200px;
-    }
-
-    .boton{
-        margin-top: 20px;
-        width: 100px;
-        height: 48px;
-        padding: 10px;
-        box-sizing: border-box;
-        color: white;
-        background-image: linear-gradient(black, rgb(23, 23, 23));
-        border: 1px solid black;
-        display: flex;
-        grid-column: 2;
-        grid-row: 4;
-        justify-content: center;
-        text-decoration: none;
-    }
-    
     
 }
-
-
 
 .servicio_hijo h2{
     font-size: 25px !important;
     justify-content: start !important;
 
+}
+
+
+//MAPS
+$colores-servicios: (
+    'primero': rgb(255, 255, 255),
+    'segundo': rgb(0, 0, 0),
+    'tercero': rgb(0, 0, 0),
+
+);
+
+.hijo{
+    background-color: map-get($map: $colores-servicios, $key: 'primero' );
+    color: map-get($map: $colores-servicios, $key: 'segundo' );
+    .icon-serv{
+        color:map-get($map: $colores-servicios, $key: 'tercero' ) ;
+    } 
 }
 
 
