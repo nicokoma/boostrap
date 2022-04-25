@@ -377,7 +377,7 @@ header {
   grid-row: 5;
   grid-column: 1/12;
   font-size: 2.3em;
-  color: #222;
+  color: #777;
   line-height: 100px;
   opacity: 0.4;
   margin-left: 40px;
@@ -526,6 +526,7 @@ header {
   display: flex;
   grid-column: 4/7;
   font-size: 14px;
+  margin: 0;
 }
 .pieDepagina .redes {
   display: flex;
@@ -825,7 +826,7 @@ header {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6, 1fr);
-    height: 210vh;
+    height: 215vh;
     justify-items: center;
   }
   .servicios-home .titulo, .servicios .titulo {
@@ -962,7 +963,6 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 500px;
     /*.solido-negro{
         background-color: $color-fondo;
         opacity: .5;
