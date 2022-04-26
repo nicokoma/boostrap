@@ -113,6 +113,10 @@ nav a:active {
   text-align: center;
 }
 
+.margen-5 {
+  margin: 0 5px;
+}
+
 .negro {
   background-color: #000;
 }
