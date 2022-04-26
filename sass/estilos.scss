@@ -421,15 +421,15 @@ header{
 
 
 
-
+//HOVER SERVICIOS
 .cliente{
 
 
     div {
-        opacity: 0;
+        opacity: .8;
         transition: 100ms;
         position: absolute;
-        width: 320px;
+        width: 330px;
         height: 250px;
         background-color: black;
         color: white;
@@ -452,9 +452,42 @@ header{
     }
 }
 
+@media screen and (max-width: 575px){
+    .cliente div{
+        width: 374px;
+        height: 291px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .cliente div{
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .cliente div{
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .cliente div{
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px){
+    .cliente div{
+        width: 285px;
+    }
+}
 
 
 
+
+
+//FIN HOVER SERVICIOS
 
 .titulo-servicio h2{
     font-family: $tamano-h2;
