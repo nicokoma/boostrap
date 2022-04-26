@@ -406,7 +406,7 @@ header {
 }
 
 .cliente div {
-  opacity: 0.8;
+  opacity: 0;
   transition: 100ms;
   position: absolute;
   width: 330px;
@@ -415,6 +415,16 @@ header {
   color: white;
   text-decoration: none;
   margin-left: -12px;
+}
+.cliente a {
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  border: 1px solid #FFF;
+}
+.cliente a:hover {
+  background-color: #FFF;
+  color: #000;
 }
 .cliente:hover div {
   opacity: 0.8;

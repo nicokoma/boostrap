@@ -426,7 +426,7 @@ header{
 
 
     div {
-        opacity: .8;
+        opacity: 0;
         transition: 100ms;
         position: absolute;
         width: 330px;
@@ -436,12 +436,22 @@ header{
         text-decoration: none;
         margin-left: -12px;
         
+        
     
     }
 
     a{
 
         @extend .boton;
+        display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        border: 1px solid $color-borde-b;
+
+        &:hover{
+            background-color: $color-fondo-b;
+            color: $color-fuentes-n;
+        }
     }
 
 
