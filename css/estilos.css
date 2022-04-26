@@ -387,6 +387,17 @@ header {
   margin-left: 40px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .descripcion-home .conceptos {
+    display: flex;
+    grid-row: 5;
+    grid-column: 1/10;
+    font-size: 1.5em;
+    color: #777;
+    line-height: 100px;
+    opacity: 0.4;
+  }
+}
 .portfolio-home {
   background-color: #FFF;
   margin-bottom: 50px;
