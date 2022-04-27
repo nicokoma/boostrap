@@ -95,20 +95,6 @@ h1 {
   background-color: #c25e30;
 }
 
-nav {
-  background-color: #000;
-}
-nav a {
-  display: inline-block;
-}
-nav a:hover {
-  background-color: #111;
-  color: #FFF;
-}
-nav a:active {
-  color: #FFF;
-}
-
 .center {
   text-align: center;
 }
@@ -202,6 +188,15 @@ header {
   align-items: center;
   color: white;
   font-family: "ubuntu-regular";
+}
+.encabezado a {
+  background: none;
+}
+.encabezado a:hover {
+  background: rgb(58, 58, 58);
+}
+.encabezado .logo-v3ktor:hover {
+  background: none;
 }
 
 .menu-v3ktor {
