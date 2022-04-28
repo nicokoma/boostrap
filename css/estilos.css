@@ -95,6 +95,10 @@ h1 {
   background-color: #c25e30;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 .center {
   text-align: center;
 }
