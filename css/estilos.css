@@ -470,6 +470,45 @@ header {
   font-family: 30px;
 }
 
+.servicios-2 {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.servicios-2 .texto {
+  margin-bottom: 25px;
+}
+.servicios-2 .icon-serv {
+  font-size: 9em;
+  margin: 20px 0;
+  color: black;
+}
+.servicios-2 .hijo {
+  margin: 0 20px;
+  text-align: center;
+  transition: 200ms;
+  height: 375px;
+}
+.servicios-2 .hijo:hover {
+  background-color: rgb(0, 0, 0);
+}
+.servicios-2 .hijo:hover .texto {
+  color: white;
+}
+.servicios-2 .hijo:hover .titulo-servicio {
+  color: white;
+}
+.servicios-2 .hijo:hover .icon-serv {
+  color: white;
+}
+.servicios-2 .hijo:hover a {
+  border: 1px solid white;
+}
+.servicios-2 .hijo:hover a:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+
 .servicios-home, .servicios {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -1040,6 +1079,10 @@ header {
   }
 
   /***SERVICIOS MOBILE***/
+  .servicios-2 {
+    height: 185vh;
+  }
+
   .principal-servicio {
     height: 190vh;
     display: grid;
