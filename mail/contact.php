@@ -25,12 +25,12 @@ if(isset($_POST['submit']))
 
 		if ($mail_status) { ?>
 			<script language="javascript" type="text/javascript">
-				window.location = 'gracias.html';
+				window.location = '../pages/gracias.html';
 			</script>
 		<?php
 		} else { ?>
 			<script language="javascript" type="text/javascript">
-				window.location = 'error.html';
+				window.location = '../pages/error.html';
 			</script>
 		<?php
 		}
@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
 	{
 		?>
 			<script language="javascript" type="text/javascript">
-				window.location = 'error2.html';
+				window.location = '../pages/error2.html';
 			</script>
 		<?php
 		//echo "Captcha Invalido, por favor intente nuevamente";

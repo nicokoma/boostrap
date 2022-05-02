@@ -53,12 +53,12 @@
         <h1 class="titulo">Contacto</h1>
     
         <div class="formulario">
-            <form action="contact.php" method="post" enctype="text/plain">
+            <form action="mail/contact.php" method="post" enctype="text/plain">
                 <div class="mb-3">
-                    <input type="name" class="form-control form-control-lg nombre" id="exampleFormControlInput1" placeholder="Nombre">
+                    <input type="visitor_name" class="form-control form-control-lg nombre" id="exampleFormControlInput1" placeholder="Nombre">
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control form-control-lg email" id="exampleFormControlInput1" placeholder="Email">
+                    <input type="visitor_email" class="form-control form-control-lg email" id="exampleFormControlInput1" placeholder="Email">
                 </div>
                 <div class="mb-3 form-floating">
                     <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
@@ -70,10 +70,10 @@
                     <label for="floatingSelectGrid">Tipo de consulta</label>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu consulta"></textarea>
+                    <textarea name="visitor_message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu consulta"></textarea>
                 </div>
 
-                <button type="button" class="boton">ENVIAR</button>
+                <button name="submit" id="submit" type="submit" class="boton">ENVIAR</button>
 
             </form>
         </div>
