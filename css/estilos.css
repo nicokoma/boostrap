@@ -653,6 +653,8 @@ header {
   grid-template-rows: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
 .principal-portfolio .titulo {
   display: flex;
@@ -681,10 +683,14 @@ header {
   display: flex;
   grid-column: 2/12;
   grid-row: 3/4;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
 
 .mastrabajos {
   margin-bottom: 40px;
+  animation: fadeIn;
+  animation-duration: 1s;
 }
 .mastrabajos .titulo {
   margin-bottom: 10px;
