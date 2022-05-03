@@ -27,7 +27,7 @@ html, body{
 
 //COLORS:
 .negro{
-    background-color:$color-fondo;
+    background-color:$negro;
 }
 
 .rojo-mc{
@@ -109,8 +109,8 @@ h3{
     height: 50px;
     padding: 13px;
     box-sizing: border-box;
-    color: $color-fuentes-b;
-    background:$color-fondo;
+    color: $blanco;
+    background:$negro;
     border: none;
     text-decoration: none;
 }
@@ -165,7 +165,7 @@ header{
 
 .navbar-v3ktor{
     a{
-        color: $color-fuentes-b;
+        color: $blanco;
         border-radius: 20px;
     }
 
@@ -178,7 +178,7 @@ header{
 .encabezado{
 
     .menu-bar{
-        color: $color-fuentes-b !important;
+        color: $blanco !important;
         display: none;
     }
 
@@ -193,7 +193,7 @@ header{
     }
     
     .menu{
-        color: $color-fuentes-b;
+        color: $blanco;
         font-size: 14px;
         display: flex;
         grid-column: 8/12;
@@ -313,7 +313,7 @@ header{
 
     button:hover{
         background: rgb(45, 45, 45);
-        color: $color-fuentes-b;
+        color: $blanco;
     }   
 
     button{
@@ -350,8 +350,8 @@ header{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(9,1fr);
     box-sizing: border-box;
-    background-color: $color-fondo;
-    color: $color-fuentes-b;
+    background-color: $celeste;
+    color: $blanco;
     font-size: 4em;
     font-weight: 700;
     height: 100vh;
@@ -418,7 +418,7 @@ header{
 
 //PORTFOLIO
 .portfolio-home{
-    background-color: $color-fondo-b;
+    background-color: $negro;
     margin-bottom: 50px;
 
 
@@ -475,7 +475,7 @@ header{
         border: 1px solid $color-borde-b;
 
         &:hover{
-            background-color: $color-fondo-b;
+            background-color: $negro;
             color: $color-fuentes-n;
         }
     }
@@ -653,7 +653,7 @@ header{
 
     a:hover{
         background:rgb(23, 23, 23);
-        color: $color-fuentes-b;
+        color: $blanco;
     }
 }
 
@@ -669,7 +669,7 @@ header{
     }
 
     /*.solido-negro{
-        background-color: $color-fondo;
+        background-color: $negro;
         opacity: .7;
         position: absolute;
         z-index: 90;
@@ -728,7 +728,7 @@ header{
     }
 
     a{
-        color: $color-fondo;
+        color: $negro;
         text-decoration: none;
     }
 
@@ -1045,8 +1045,8 @@ $colores-servicios: (
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6,1fr);
     box-sizing: border-box;
-    background-color: $color-fondo;
-    color: $color-fuentes-b;
+    background-color: $celeste;
+    color: $blanco;
     font-size: 4em;
     font-weight: 700;
     height: 100vh;
@@ -1325,14 +1325,14 @@ $colores-servicios: (
 .section-video{
     display: flex;
     align-items: center;
-    //background-color: $color-fondo;
+    //background-color: $negro;
     text-align: center;
     .video-home{
         width: 100%;
     }
 
     /*.solido-negro{
-        background-color: $color-fondo;
+        background-color: $negro;
         opacity: .5;
         position: absolute;
         z-index: 90;
