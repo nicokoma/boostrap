@@ -892,12 +892,12 @@ header {
     grid-row: 1;
     font-size: 20px;
     font-family: "ubuntu-light";
-    color: rgb(53, 53, 53);
+    color: #FFF;
     align-items: end;
     margin-left: 0px;
   }
   .descripcion-home p {
-    color: rgb(56, 56, 56);
+    color: #FFF;
     display: flex;
     grid-column: 2;
     grid-row: 2;
@@ -912,7 +912,7 @@ header {
     grid-row: 3;
     grid-column: 2;
     font-size: 0.8em;
-    color: #222;
+    color: #FFF;
     line-height: 50px;
     opacity: 0.4;
     margin-left: 0px;

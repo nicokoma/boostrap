@@ -1081,7 +1081,7 @@ $colores-servicios: (
     font-size: 4em;
     font-weight: 700;
     height: 100vh;
-    //padding: 30px;
+    
 
 
     h3{
@@ -1090,14 +1090,14 @@ $colores-servicios: (
         grid-row: 1;
         font-size: 20px;
         font-family: $tipografia-v3ktor-light;
-        color: rgb(53, 53, 53);
+        color: $blanco;
         align-items: end;
         margin-left: 0px;
         //margin: 200px 0 0 0 !important; 
     }
 
     p{
-        color: rgb(56, 56, 56);
+        color: $blanco;
         display: flex;
         grid-column: 2;
         grid-row: 2;
@@ -1114,7 +1114,7 @@ $colores-servicios: (
         grid-row: 3;
         grid-column: 2;
         font-size: .8em;
-        color: #222;
+        color: $blanco;
         line-height: 50px;
         opacity: .4;
         margin-left: 0px;
