@@ -53,31 +53,18 @@
         <h1 class="titulo">Contacto</h1>
     
         <div class="formulario">
-            <form action="mail/contact.php" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <input type="text" class="form-control form-control-lg nombre" id="exampleFormControlInput1" placeholder="Nombre">
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control form-control-lg email" id="exampleFormControlInput1" placeholder="Email">
-                </div>
-                <!--
-                <div class="mb-3 form-floating">
-                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                        <option selected>Elegí una opción</option>
-                        <option value="1">Diseño Web</option>
-                        <option value="2">Desarrollo</option>
-                        <option value="3">Otro</option>
-                    </select>
-                    <label for="floatingSelectGrid">Tipo de consulta</label>
-                </div>
-                -->
-                <div class="mb-3">
-                    <textarea name="visitor_message" class="form-control mensaje-form" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu consulta"></textarea>
-                </div>
-
-                <button name="submit" id="submit" type="submit" class="boton">ENVIAR</button>
-
-            </form>
+            <form action="https://formspree.io/f/mbjwpwwz" method="POST">
+            <div class="mb-3">
+                <input class="form-control form-control-lg nombre" id="exampleFormControlInput1" type="text" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-lg email" id="exampleFormControlInput1" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control mensaje-form" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Dejanos tu Comentario"></textarea>
+            </div>
+            <button type="submit" class="boton">ENVIAR</button>
+          </form>
         </div>
 
         <div class="imagen">
