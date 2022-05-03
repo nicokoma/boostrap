@@ -1007,6 +1007,7 @@ $colores-servicios: (
         justify-items: center;
         background-image: url(../assets/img_index.jpg);
         background-size: cover;
+        background-position: top;
 
         .logo{
             width: 300px;
@@ -1018,7 +1019,13 @@ $colores-servicios: (
 
         .titulo{
             display: flex;
-            font-size: 20px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+
+        .texto{
+            font-size: 14px;
         }
     
     }

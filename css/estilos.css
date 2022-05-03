@@ -826,6 +826,7 @@ header {
     justify-items: center;
     background-image: url(../assets/img_index.jpg);
     background-size: cover;
+    background-position: top;
   }
   .principal .logo {
     width: 300px;
@@ -835,7 +836,11 @@ header {
   }
   .principal .titulo {
     display: flex;
-    font-size: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .principal .texto {
+    font-size: 14px;
   }
 
   .quienes-home {
