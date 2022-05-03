@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *     ,
- * 427 |         color: $color-fuentes-n;
+ * 424 |         color: $color-fuentes-n;
  *     |                ^^^^^^^^^^^^^^^^
  *     '
- *   sass\estilos.scss 427:16  root stylesheet */
+ *   sass\estilos.scss 424:16  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 427 \2502          color: $color-fuentes-n;\a     \2502                 ^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\estilos.scss 427:16  root stylesheet";
+  content: "Error: Undefined variable.\a     \2577 \a 424 \2502          color: $color-fuentes-n;\a     \2502                 ^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\estilos.scss 424:16  root stylesheet";
 }

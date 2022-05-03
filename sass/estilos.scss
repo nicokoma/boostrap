@@ -350,8 +350,6 @@ header{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(9,1fr);
     box-sizing: border-box;
-    background-color: $celeste;
-    color: $blanco;
     font-size: 4em;
     font-weight: 700;
     height: 100vh;
@@ -364,7 +362,6 @@ header{
         grid-row: 3;
         font-size: 20px;
         font-family: $tipografia-v3ktor-light;
-        color: rgb(53, 53, 53);
         align-items: end;
         margin-left: 40px;
         font-family: $tipografia-v3ktor-light;
@@ -372,7 +369,7 @@ header{
     }
 
     p{
-        color: rgb(56, 56, 56);
+        color: $negro;
         display: flex;
         grid-column: 1/12;
         grid-row: 4;
@@ -424,7 +421,7 @@ header{
 
 
     .titulo{
-        color: $color-fuentes-n;
+        color: $negro;
         font-size: $tamano-h1;
         font-weight: 800;
         justify-content: center;
@@ -472,11 +469,11 @@ header{
         display: flex;
         margin: 100px auto;
         justify-content: center;
-        border: 1px solid $color-borde-b;
+        border: 1px solid $negro;
 
         &:hover{
             background-color: $negro;
-            color: $color-fuentes-n;
+            color: $negro;
         }
     }
 
@@ -571,7 +568,7 @@ header{
 
             a:hover{
                 background:rgb(255, 255, 255);
-                color: $color-fuentes-n;
+                color: $negro;
             }
         }
     }
@@ -633,7 +630,7 @@ header{
 
             a:hover{
                 background:rgb(255, 255, 255);
-                color: $color-fuentes-n;
+                color: $negro;
             }
         }
     }
@@ -680,7 +677,7 @@ header{
 
     .content{
         position: absolute;
-        color: $color-fuentes-n;
+        color: $negro;
         margin-left: 50px;
         z-index: 100;
         opacity: .7;
@@ -1342,7 +1339,7 @@ $colores-servicios: (
 
     .content{
         position: absolute;
-        color: $color-fuentes-n;
+        color: $negro;
         margin-left: 50px;
         z-index: 100;
         opacity: .7;

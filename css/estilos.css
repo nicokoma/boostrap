@@ -348,8 +348,6 @@ header {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
   box-sizing: border-box;
-  background-color: #000;
-  color: #FFF;
   font-size: 4em;
   font-weight: 700;
   height: 100vh;
@@ -360,13 +358,12 @@ header {
   grid-row: 3;
   font-size: 20px;
   font-family: "ubuntu-light";
-  color: rgb(53, 53, 53);
   align-items: end;
   margin-left: 40px;
   font-family: "ubuntu-light";
 }
 .descripcion-home p {
-  color: rgb(56, 56, 56);
+  color: #000;
   display: flex;
   grid-column: 1/12;
   grid-row: 4;
@@ -398,7 +395,7 @@ header {
   }
 }
 .portfolio-home {
-  background-color: #FFF;
+  background-color: #000;
   margin-bottom: 50px;
 }
 .portfolio-home .titulo {
@@ -430,10 +427,10 @@ header {
   display: flex;
   margin: 100px auto;
   justify-content: center;
-  border: 1px solid #FFF;
+  border: 1px solid #000;
 }
 .cliente a:hover {
-  background-color: #FFF;
+  background-color: #000;
   color: #000;
 }
 .cliente:hover div {
@@ -577,7 +574,7 @@ header {
   align-items: center;
   text-align: center;
   /*.solido-negro{
-      background-color: $color-fondo;
+      background-color: $negro;
       opacity: .7;
       position: absolute;
       z-index: 90;
@@ -851,7 +848,7 @@ header {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: repeat(6, 1fr);
     box-sizing: border-box;
-    background-color: #000;
+    background-color: #67d6ea;
     color: #FFF;
     font-size: 4em;
     font-weight: 700;
@@ -1063,7 +1060,7 @@ header {
     align-items: center;
     text-align: center;
     /*.solido-negro{
-        background-color: $color-fondo;
+        background-color: $negro;
         opacity: .5;
         position: absolute;
         z-index: 90;
