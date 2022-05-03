@@ -470,10 +470,10 @@ header{
         display: flex;
         margin: 100px auto;
         justify-content: center;
-        border: 1px solid $negro;
+        border: 1px solid $blanco;
 
         &:hover{
-            background-color: $negro;
+            background-color: $blanco;
             color: $negro;
         }
     }
@@ -481,7 +481,7 @@ header{
 
     &:hover{
         div{
-            opacity: .8;
+            opacity: .9;
         }
     }
 }
@@ -583,6 +583,7 @@ header{
     grid-template-rows: repeat(6,1fr);
     height: 100vh;
     justify-items: center;
+    align-items: center;
 
     .icon-serv{
         font-size: 9em;

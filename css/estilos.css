@@ -429,14 +429,14 @@ header {
   display: flex;
   margin: 100px auto;
   justify-content: center;
-  border: 1px solid #000;
+  border: 1px solid #FFF;
 }
 .cliente a:hover {
-  background-color: #000;
+  background-color: #FFF;
   color: #000;
 }
 .cliente:hover div {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 575px) {
@@ -514,6 +514,7 @@ header {
   grid-template-rows: repeat(6, 1fr);
   height: 100vh;
   justify-items: center;
+  align-items: center;
 }
 .servicios-home .icon-serv, .servicios .icon-serv {
   font-size: 9em;
