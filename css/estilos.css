@@ -184,6 +184,24 @@ header {
   animation-duration: 1s;
 }
 
+.encabezado .menu-bar {
+  color: #FFF !important;
+  display: none;
+}
+.encabezado .logo {
+  display: flex;
+  width: 90px;
+  height: 30px;
+  grid-column: 2/3;
+}
+.encabezado .menu {
+  color: #FFF;
+  font-size: 14px;
+  display: flex;
+  grid-column: 8/12;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
 .encabezado .navbar-v3ktor {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -215,25 +233,6 @@ header {
 .navbar-v3ktor:hover {
   color: rgb(152, 152, 152);
   background-color: rgb(77, 77, 77);
-}
-
-.encabezado .menu-bar {
-  color: #FFF !important;
-  display: none;
-}
-.encabezado .logo {
-  display: flex;
-  width: 90px;
-  height: 30px;
-  grid-column: 2/3;
-}
-.encabezado .menu {
-  color: #FFF;
-  font-size: 14px;
-  display: flex;
-  grid-column: 8/12;
-  justify-content: space-evenly;
-  list-style-type: none;
 }
 
 .menu a {
@@ -272,10 +271,20 @@ header {
 .principal .titulo {
   display: flex;
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 3/4;
   animation: flash;
   animation-duration: 200ms;
   animation-delay: 1s;
+  font-size: 5em;
+  font-family: "ubuntu-bold";
+  letter-spacing: -2px;
+}
+.principal .texto {
+  display: flex;
+  grid-column: 2;
+  grid-row: 4/5;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 @keyframes opacidad {
