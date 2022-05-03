@@ -491,6 +491,10 @@ header{
         width: 374px;
         height: 291px;
     }
+
+    .cliente a{
+        margin: 120px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -532,6 +536,11 @@ header{
     height: 80vh;
     display: flex;
     align-items: center;
+    background-image: linear-gradient($rosa, $rosa-oscuro);
+
+    .titulo{
+        color: $negro;
+    }
 
     .texto{
         margin-bottom: 25px;
@@ -541,14 +550,15 @@ header{
     .icon-serv{
         font-size: 9em;
         margin: 20px 0;
-        color: black;
+        color: $negro;
     }
 
     .hijo{
         margin: 0 20px;
         text-align: center;
-        transition: 200ms;
+        transition: 400ms;
         height: 375px;
+        background: none;
 
         &:hover{
             background-color: rgb(0, 0, 0);
@@ -556,11 +566,11 @@ header{
                 color: white;
             }
             .titulo-servicio{
-                color: white;
+                color: $rosa;
             }
 
             .icon-serv{
-                color: white;
+                color: $rosa;
             }
 
             a{
@@ -568,8 +578,9 @@ header{
             }
 
             a:hover{
-                background:rgb(255, 255, 255);
+                background:$rosa;
                 color: $negro;
+                transition: 400ms;
             }
         }
     }
@@ -1128,42 +1139,22 @@ $colores-servicios: (
 }
 
 
+.servicios-2{
+    .titulo{
+        font-size: 40px;
+    }
+
+    .hijo{
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
 
 
 
 .servicios-boot{
     height: 100%;
-}
-
-
-
-.servicios-home{
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(6,1fr);
-    height: 215vh;
-    justify-items: center;
-
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        grid-row: 1;
-        margin-top: 20px;
-        font-size: 30px;
-    }
-
-    .servicios{
-        display: flex;
-        flex-direction: column;
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .hijo{
-        margin: 30px 0;
-    }
-    
-    
 }
 
 
@@ -1265,10 +1256,7 @@ $colores-servicios: (
     }
 
 
-    .pieDepagina{
-        margin-top: 40px;
-    }
-
+ 
 
 
 
@@ -1361,7 +1349,7 @@ $colores-servicios: (
 
 
 .servicios-2{
-    height: 185vh;
+    height: 200vh;
 }
 
 .principal-servicio{

@@ -444,6 +444,10 @@ header {
     width: 374px;
     height: 291px;
   }
+
+  .cliente a {
+    margin: 120px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .cliente div {
@@ -473,6 +477,10 @@ header {
   height: 80vh;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(#f3c9dd, #e2abbe);
+}
+.servicios-2 .titulo {
+  color: #000;
 }
 .servicios-2 .texto {
   margin-bottom: 25px;
@@ -480,13 +488,14 @@ header {
 .servicios-2 .icon-serv {
   font-size: 9em;
   margin: 20px 0;
-  color: black;
+  color: #000;
 }
 .servicios-2 .hijo {
   margin: 0 20px;
   text-align: center;
-  transition: 200ms;
+  transition: 400ms;
   height: 375px;
+  background: none;
 }
 .servicios-2 .hijo:hover {
   background-color: rgb(0, 0, 0);
@@ -495,17 +504,18 @@ header {
   color: white;
 }
 .servicios-2 .hijo:hover .titulo-servicio {
-  color: white;
+  color: #f3c9dd;
 }
 .servicios-2 .hijo:hover .icon-serv {
-  color: white;
+  color: #f3c9dd;
 }
 .servicios-2 .hijo:hover a {
   border: 1px solid white;
 }
 .servicios-2 .hijo:hover a:hover {
-  background: rgb(255, 255, 255);
+  background: #f3c9dd;
   color: #000;
+  transition: 400ms;
 }
 
 .servicios-home, .servicios {
@@ -917,32 +927,17 @@ header {
     margin: 20px 0;
   }
 
-  .servicios-boot {
-    height: 100%;
+  .servicios-2 .titulo {
+    font-size: 40px;
+  }
+  .servicios-2 .hijo {
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 10px;
   }
 
-  .servicios-home, .servicios {
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: repeat(6, 1fr);
-    height: 215vh;
-    justify-items: center;
-  }
-  .servicios-home .titulo, .servicios .titulo {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 20px;
-    font-size: 30px;
-  }
-  .servicios-home .servicios, .servicios .servicios {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .servicios-home .hijo, .servicios .hijo {
-    margin: 30px 0;
+  .servicios-boot {
+    height: 100%;
   }
 
   .pieDepagina {
@@ -1021,10 +1016,6 @@ header {
     width: 92px;
   }
 
-  .pieDepagina {
-    margin-top: 40px;
-  }
-
   /***PORTFOLIO MOBILE***/
   .principal-portfolio {
     height: 100%;
@@ -1090,7 +1081,7 @@ header {
 
   /***SERVICIOS MOBILE***/
   .servicios-2 {
-    height: 185vh;
+    height: 200vh;
   }
 
   .principal-servicio {
