@@ -756,6 +756,10 @@ header {
   border: none;
   background-color: rgb(240, 240, 240);
 }
+.contacto .mensaje-form {
+  resize: none;
+  height: 150px;
+}
 
 .contacto textarea {
   width: 100%;
