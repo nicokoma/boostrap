@@ -347,6 +347,8 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
+  background-image: linear-gradient(#67d6ea, #12abca);
+  color: #FFF;
   box-sizing: border-box;
   font-size: 4em;
   font-weight: 700;
@@ -356,14 +358,14 @@ header {
   display: flex;
   grid-column: 1/4;
   grid-row: 3;
+  color: #FFF;
   font-size: 20px;
   font-family: "ubuntu-light";
   align-items: end;
   margin-left: 40px;
-  font-family: "ubuntu-light";
 }
 .descripcion-home p {
-  color: #000;
+  color: #FFF;
   display: flex;
   grid-column: 1/12;
   grid-row: 4;
@@ -376,8 +378,8 @@ header {
   display: flex;
   grid-row: 5;
   grid-column: 1/12;
+  color: #12abca;
   font-size: 2.3em;
-  color: #777;
   line-height: 100px;
   opacity: 0.4;
   margin-left: 40px;
@@ -395,7 +397,7 @@ header {
   }
 }
 .portfolio-home {
-  background-color: #000;
+  background-color: #FFF;
   margin-bottom: 50px;
 }
 .portfolio-home .titulo {

@@ -349,27 +349,28 @@ header{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(9,1fr);
+    //background-color: $celeste;
+    background-image: linear-gradient($celeste,$celeste-oscuro);
+    color: $blanco;
     box-sizing: border-box;
     font-size: 4em;
     font-weight: 700;
     height: 100vh;
-    //padding: 30px;
 
 
     h3{
         display: flex;
         grid-column: 1/4;
         grid-row: 3;
+        color: $blanco;
         font-size: 20px;
         font-family: $tipografia-v3ktor-light;
         align-items: end;
         margin-left: 40px;
-        font-family: $tipografia-v3ktor-light;
-        //margin: 200px 0 0 0 !important; 
     }
 
     p{
-        color: $negro;
+        color: $blanco;
         display: flex;
         grid-column: 1/12;
         grid-row: 4;
@@ -384,8 +385,8 @@ header{
         display: flex;
         grid-row: 5;
         grid-column: 1/12;
+        color: $celeste-oscuro;
         font-size: 2.3em;
-        color: #777;
         line-height: 100px;
         opacity: .4;
         margin-left: 40px;
@@ -415,7 +416,7 @@ header{
 
 //PORTFOLIO
 .portfolio-home{
-    background-color: $negro;
+    background-color: $blanco;
     margin-bottom: 50px;
 
 
