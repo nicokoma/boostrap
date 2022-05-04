@@ -469,8 +469,8 @@ header{
         position: absolute;
         width: 330px;
         height: 250px;
-        background-color: black;
-        color: white;
+        background-color: $celeste-oscuro;
+        color: $blanco;
         text-decoration: none;
         margin-left: -12px;
         
@@ -482,7 +482,7 @@ header{
 
         @extend .boton;
         display: flex;
-        margin: 100px auto;
+        margin: 31%;
         justify-content: center;
         border: 1px solid $blanco;
 
@@ -496,6 +496,7 @@ header{
     &:hover{
         div{
             opacity: .9;
+            cursor: pointer;
         }
     }
 }

@@ -434,14 +434,14 @@ header {
   position: absolute;
   width: 330px;
   height: 250px;
-  background-color: black;
-  color: white;
+  background-color: #12abca;
+  color: #FFF;
   text-decoration: none;
   margin-left: -12px;
 }
 .cliente a {
   display: flex;
-  margin: 100px auto;
+  margin: 31%;
   justify-content: center;
   border: 1px solid #FFF;
 }
@@ -451,6 +451,7 @@ header {
 }
 .cliente:hover div {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 575px) {
