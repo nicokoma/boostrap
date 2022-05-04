@@ -592,7 +592,7 @@ header{
             transition-duration: 600ms;
             cursor: pointer;
             background: $rosa-oscuro;
-            box-shadow: 2px 2px 20px $rosa-oscuro;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 
             .texto{
                 color: $negro;
@@ -605,9 +605,6 @@ header{
                 color: $negro;
             }
 
-            a{
-                border: 1px solid $blanco;
-            }
 
             a:hover{
                 background:$blanco;

@@ -520,7 +520,7 @@ header {
   transition-duration: 600ms;
   cursor: pointer;
   background: #e2abbe;
-  box-shadow: 2px 2px 20px #e2abbe;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 .servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
   color: #000;
@@ -530,9 +530,6 @@ header {
 }
 .servicios-2 .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
   color: #000;
-}
-.servicios-2 .hijo:hover a, .servicios .hijo:hover a {
-  border: 1px solid #FFF;
 }
 .servicios-2 .hijo:hover a:hover, .servicios .hijo:hover a:hover {
   background: #FFF;
