@@ -459,7 +459,7 @@ header{
 
 
 
-//HOVER SERVICIOS
+//HOVER PORTFOLIO
 .cliente{
 
 
@@ -489,6 +489,7 @@ header{
         &:hover{
             background-color: $blanco;
             color: $negro;
+            transition-duration: 400ms;
         }
     }
 
@@ -497,6 +498,7 @@ header{
         div{
             opacity: .9;
             cursor: pointer;
+            transition-duration: 400ms;
         }
     }
 }
@@ -540,7 +542,15 @@ header{
 
 
 
-//FIN HOVER SERVICIOS
+//FIN HOVER PORTFOLIO
+
+
+
+
+
+
+
+//SERVICIOS HOME
 
 .titulo-servicio h2{
     font-family: $tamano-h2;
@@ -555,6 +565,7 @@ header{
 
     .titulo{
         color: $negro;
+        margin-bottom: 40px;
     }
 
     .texto{
@@ -569,31 +580,38 @@ header{
     }
 
     .hijo{
+        box-sizing: border-box;
         margin: 0 20px;
         text-align: center;
-        transition: 400ms;
         height: 375px;
+        border: none;
         background: none;
 
         &:hover{
-            background-color: rgb(0, 0, 0);
+            border: 1px solid $negro;
+            border-style:inset;
+            box-sizing: border-box;
+            transition: all;
+            transition-duration: 400ms;
+            cursor: pointer;
+
             .texto{
-                color: white;
+                color: $negro;
             }
             .titulo-servicio{
-                color: $rosa;
+                color: $negro;
             }
 
             .icon-serv{
-                color: $rosa;
+                color: $negro;
             }
 
             a{
-                border: 1px solid white;
+                border: 1px solid $blanco;
             }
 
             a:hover{
-                background:$rosa;
+                background:$blanco;
                 color: $negro;
                 transition: 400ms;
             }
@@ -602,85 +620,6 @@ header{
 }
 
 
-
-.servicios-home{
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(6,1fr);
-    height: 100vh;
-    justify-items: center;
-    align-items: center;
-
-    .icon-serv{
-        font-size: 9em;
-        margin: 20px 0;
-        color: black;
-    }
-
-
-    .titulo{
-        display: flex;
-        grid-column: 5;
-        grid-row: 2;
-        margin-top: 20px;
-        font-size: $tamano-h1;
-    }
-
-    .servicios{
-        display: flex;
-        flex-direction: row;
-        grid-column: 1/12;
-        grid-row: 3/4;
-    }
-
-    .hijo{
-        width: 300px;
-        height: 400px;
-        margin: 0 20px;
-        text-align: center;
-        transition: 200ms;
-        &:hover{
-            background-color: rgb(0, 0, 0);
-            .texto{
-                color: white;
-            }
-            .titulo-servicio{
-                color: white;
-            }
-
-            .icon-serv{
-                color: white;
-            }
-
-            a{
-                border: 1px solid white;
-            }
-
-            a:hover{
-                background:rgb(255, 255, 255);
-                color: $negro;
-            }
-        }
-    }
-
-    .texto{
-        margin: 10px 0 20px 0;
-        line-height: 25px;
-    }
-
-    img{
-        width: 150px;
-    }
-    
-    a{
-        @extend .boton;
-    }
-
-    a:hover{
-        background:rgb(23, 23, 23);
-        color: $blanco;
-    }
-}
 
 
 //VIDEO
@@ -857,7 +796,7 @@ header{
 /***SERVICIOS***/
 
 .servicios{
-@extend .servicios-home;
+@extend .servicios-2;
 margin-top: 40px;
 height: 80vh;
 

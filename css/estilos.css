@@ -144,7 +144,7 @@ h1 {
   font-size: 40px;
 }
 
-h1, h2, p, button, a, .boton, .servicios-home a, .servicios a, .cliente a, .quienes-home button, .quienes-home a {
+h1, h2, p, button, a, .boton, .cliente a, .quienes-home button, .quienes-home a {
   font-family: "ubuntu-regular";
 }
 
@@ -167,7 +167,7 @@ h3 {
 }
 
 /****BOTON*****/
-.boton, .servicios-home a, .servicios a, .cliente a, .quienes-home button, .quienes-home a {
+.boton, .cliente a, .quienes-home button, .quienes-home a {
   width: 117px;
   height: 50px;
   padding: 13px;
@@ -286,7 +286,7 @@ header {
   font-size: 1.5em;
   text-align: center;
 }
-.principal .boton, .principal .servicios-home a, .principal .servicios a, .servicios-home .principal a, .servicios .principal a, .principal .cliente a, .cliente .principal a, .principal .quienes-home button, .quienes-home .principal button, .principal .quienes-home a, .quienes-home .principal a {
+.principal .boton, .principal .cliente a, .cliente .principal a, .principal .quienes-home button, .quienes-home .principal button, .principal .quienes-home a, .quienes-home .principal a {
   display: flex;
   grid-column: 2;
   grid-row: 5;
@@ -448,10 +448,12 @@ header {
 .cliente a:hover {
   background-color: #FFF;
   color: #000;
+  transition-duration: 400ms;
 }
 .cliente:hover div {
   opacity: 0.9;
   cursor: pointer;
+  transition-duration: 400ms;
 }
 
 @media screen and (max-width: 575px) {
@@ -488,113 +490,56 @@ header {
   font-family: 30px;
 }
 
-.servicios-2 {
+.servicios-2, .servicios {
   height: 80vh;
   display: flex;
   align-items: center;
   background-image: linear-gradient(#f3c9dd, #e2abbe);
 }
-.servicios-2 .titulo {
+.servicios-2 .titulo, .servicios .titulo {
   color: #000;
+  margin-bottom: 40px;
 }
-.servicios-2 .texto {
+.servicios-2 .texto, .servicios .texto {
   margin-bottom: 25px;
 }
-.servicios-2 .icon-serv {
+.servicios-2 .icon-serv, .servicios .icon-serv {
   font-size: 9em;
   margin: 20px 0;
   color: #000;
 }
-.servicios-2 .hijo {
+.servicios-2 .hijo, .servicios .hijo {
+  box-sizing: border-box;
   margin: 0 20px;
   text-align: center;
-  transition: 400ms;
   height: 375px;
+  border: none;
   background: none;
 }
-.servicios-2 .hijo:hover {
-  background-color: rgb(0, 0, 0);
+.servicios-2 .hijo:hover, .servicios .hijo:hover {
+  border: 1px solid #000;
+  border-style: inset;
+  box-sizing: border-box;
+  transition: all;
+  transition-duration: 400ms;
+  cursor: pointer;
 }
-.servicios-2 .hijo:hover .texto {
-  color: white;
+.servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
+  color: #000;
 }
-.servicios-2 .hijo:hover .titulo-servicio {
-  color: #f3c9dd;
+.servicios-2 .hijo:hover .titulo-servicio, .servicios .hijo:hover .titulo-servicio {
+  color: #000;
 }
-.servicios-2 .hijo:hover .icon-serv {
-  color: #f3c9dd;
+.servicios-2 .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
+  color: #000;
 }
-.servicios-2 .hijo:hover a {
-  border: 1px solid white;
+.servicios-2 .hijo:hover a, .servicios .hijo:hover a {
+  border: 1px solid #FFF;
 }
-.servicios-2 .hijo:hover a:hover {
-  background: #f3c9dd;
+.servicios-2 .hijo:hover a:hover, .servicios .hijo:hover a:hover {
+  background: #FFF;
   color: #000;
   transition: 400ms;
-}
-
-.servicios-home, .servicios {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  height: 100vh;
-  justify-items: center;
-  align-items: center;
-}
-.servicios-home .icon-serv, .servicios .icon-serv {
-  font-size: 9em;
-  margin: 20px 0;
-  color: black;
-}
-.servicios-home .titulo, .servicios .titulo {
-  display: flex;
-  grid-column: 5;
-  grid-row: 2;
-  margin-top: 20px;
-  font-size: 40px;
-}
-.servicios-home .servicios, .servicios .servicios {
-  display: flex;
-  flex-direction: row;
-  grid-column: 1/12;
-  grid-row: 3/4;
-}
-.servicios-home .hijo, .servicios .hijo {
-  width: 300px;
-  height: 400px;
-  margin: 0 20px;
-  text-align: center;
-  transition: 200ms;
-}
-.servicios-home .hijo:hover, .servicios .hijo:hover {
-  background-color: rgb(0, 0, 0);
-}
-.servicios-home .hijo:hover .texto, .servicios .hijo:hover .texto {
-  color: white;
-}
-.servicios-home .hijo:hover .titulo-servicio, .servicios .hijo:hover .titulo-servicio {
-  color: white;
-}
-.servicios-home .hijo:hover .icon-serv, .servicios .hijo:hover .icon-serv {
-  color: white;
-}
-.servicios-home .hijo:hover a, .servicios .hijo:hover a {
-  border: 1px solid white;
-}
-.servicios-home .hijo:hover a:hover, .servicios .hijo:hover a:hover {
-  background: rgb(255, 255, 255);
-  color: #000;
-}
-.servicios-home .texto, .servicios .texto {
-  margin: 10px 0 20px 0;
-  line-height: 25px;
-}
-.servicios-home img, .servicios img {
-  width: 150px;
-}
-.servicios-home a:hover, .servicios a:hover {
-  background: rgb(23, 23, 23);
-  color: #FFF;
 }
 
 .section-video {
@@ -762,7 +707,7 @@ header {
   grid-column: 6/10;
   grid-row: 2/5;
 }
-.contacto .boton, .contacto .quienes-home a, .quienes-home .contacto a, .contacto .quienes-home button, .quienes-home .contacto button, .contacto .cliente a, .cliente .contacto a, .contacto .servicios-home a, .servicios-home .contacto a, .contacto .servicios a, .servicios .contacto a {
+.contacto .boton, .contacto .quienes-home a, .quienes-home .contacto a, .contacto .quienes-home button, .quienes-home .contacto button, .contacto .cliente a, .cliente .contacto a {
   text-align: center;
   padding: 5px 10px;
   background-color: black;
@@ -947,10 +892,10 @@ header {
     margin: 20px 0;
   }
 
-  .servicios-2 .titulo {
+  .servicios-2 .titulo, .servicios .titulo {
     font-size: 40px;
   }
-  .servicios-2 .hijo {
+  .servicios-2 .hijo, .servicios .hijo {
     margin: 20px;
     box-sizing: border-box;
     padding: 10px;
@@ -1024,7 +969,7 @@ header {
     font-family: "ubuntu-light";
     padding-left: 0;
   }
-  .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a, .principal-nosotros .servicios-home a, .servicios-home .principal-nosotros a, .principal-nosotros .servicios a, .servicios .principal-nosotros a {
+  .principal-nosotros .boton, .principal-nosotros .quienes-home a, .quienes-home .principal-nosotros a, .principal-nosotros .quienes-home button, .quienes-home .principal-nosotros button, .principal-nosotros .cliente a, .cliente .principal-nosotros a {
     grid-area: boton;
     text-align: center;
     margin: 20px 0 0 0;
@@ -1100,7 +1045,7 @@ header {
   }
 
   /***SERVICIOS MOBILE***/
-  .servicios-2 {
+  .servicios-2, .servicios {
     height: 200vh;
   }
 
@@ -1141,7 +1086,7 @@ header {
     height: 50px;
   }
 
-  .servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a, .servicios-boot .servicios-home a, .servicios-home .servicios-boot a, .servicios-boot .servicios a, .servicios .servicios-boot a {
+  .servicios-boot .boton, .servicios-boot .quienes-home a, .quienes-home .servicios-boot a, .servicios-boot .quienes-home button, .quienes-home .servicios-boot button, .servicios-boot .cliente a, .cliente .servicios-boot a {
     display: inline;
   }
 
