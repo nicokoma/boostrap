@@ -513,16 +513,14 @@ header {
   margin: 0 20px;
   text-align: center;
   height: 375px;
-  border: none;
   background: none;
 }
 .servicios-2 .hijo:hover, .servicios .hijo:hover {
-  border: 1px solid #000;
-  border-style: inset;
   box-sizing: border-box;
-  transition: all;
-  transition-duration: 400ms;
+  transition-duration: 600ms;
   cursor: pointer;
+  background: #e2abbe;
+  box-shadow: 2px 2px 20px #e2abbe;
 }
 .servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
   color: #000;

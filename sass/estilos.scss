@@ -584,16 +584,15 @@ header{
         margin: 0 20px;
         text-align: center;
         height: 375px;
-        border: none;
         background: none;
 
         &:hover{
-            border: 1px solid $negro;
-            border-style:inset;
+            
             box-sizing: border-box;
-            transition: all;
-            transition-duration: 400ms;
+            transition-duration: 600ms;
             cursor: pointer;
+            background: $rosa-oscuro;
+            box-shadow: 2px 2px 20px $rosa-oscuro;
 
             .texto{
                 color: $negro;
