@@ -558,10 +558,17 @@ header {
 .section-video .content {
   position: absolute;
   color: #000;
-  margin-left: 50px;
   z-index: 100;
-  opacity: 0.7;
+  opacity: 1;
+  right: 10%;
+  font-size: 4em;
+  text-align: right;
+  line-height: 65px;
+  font-family: "ubuntu-bold";
+  animation: bounceIn;
+  animation-duration: 1s;
 }
+
 .pieDepagina {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

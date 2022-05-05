@@ -641,14 +641,21 @@ header{
     .content{
         position: absolute;
         color: $negro;
-        margin-left: 50px;
         z-index: 100;
-        opacity: .7;
+        opacity: 1;
+        right: 10%;
+        font-size: 4em;
+        text-align: right;
+        line-height: 65px;
+        font-family: 'ubuntu-bold';
+        animation: bounceIn;
+        animation-duration: 1s;
+        
     }
 
-    .titulo{
-        @extend .titulo
-    }
+   // .titulo{
+        //@extend .titulo
+    //}
 }
 
 
