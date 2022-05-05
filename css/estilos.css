@@ -519,8 +519,8 @@ header {
   box-sizing: border-box;
   transition-duration: 600ms;
   cursor: pointer;
-  background: #e2abbe;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .servicios-2 .hijo:hover .texto, .servicios .hijo:hover .texto {
   color: #000;
