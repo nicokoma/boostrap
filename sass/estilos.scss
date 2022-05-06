@@ -5,6 +5,11 @@
 @import "background";
 @import "framework";
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 
 html, body{
     overflow-x: hidden !important;
@@ -39,10 +44,7 @@ html, body{
 }
 
 
-*{
-    padding: 0;
-    margin: 0;
-}
+
 
 @font-face{
     font-family: $tipografia-v3ktor;
@@ -116,6 +118,11 @@ h3{
 }
 
 
+
+.botonera-popup{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 /****HOME*****/
@@ -558,14 +565,14 @@ header{
 
 
 .servicios-2{
-    //height: 100vh;
+    //height: 120vh;
     display: flex;
     align-items: center;
     background-image: linear-gradient($rosa, $rosa-oscuro);
 
     .titulo{
         color: $negro;
-        margin-bottom: 40px;
+        margin: 40px 0;
     }
 
     .texto{
@@ -583,7 +590,7 @@ header{
         box-sizing: border-box;
         margin: 0 20px;
         text-align: center;
-        height: 375px;
+        height: 450px;
         background: none;
 
         &:hover{

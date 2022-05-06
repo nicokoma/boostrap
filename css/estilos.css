@@ -95,6 +95,11 @@ h1 {
   background-color: #c25e30;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html, body {
   overflow-x: hidden !important;
 }
@@ -117,11 +122,6 @@ html, body {
 
 .verde-metro {
   background-color: #00a9ad;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 @font-face {
@@ -176,6 +176,11 @@ h3 {
   background: #000;
   border: none;
   text-decoration: none;
+}
+
+.botonera-popup {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /****HOME*****/
@@ -497,7 +502,7 @@ header {
 }
 .servicios-2 .titulo, .servicios .titulo {
   color: #000;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .servicios-2 .texto, .servicios .texto {
   margin-bottom: 25px;
@@ -511,7 +516,7 @@ header {
   box-sizing: border-box;
   margin: 0 20px;
   text-align: center;
-  height: 375px;
+  height: 450px;
   background: none;
 }
 .servicios-2 .hijo:hover, .servicios .hijo:hover {
