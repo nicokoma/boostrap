@@ -491,7 +491,6 @@ header {
 }
 
 .servicios-2, .servicios {
-  height: 80vh;
   display: flex;
   align-items: center;
   background-image: linear-gradient(#f3c9dd, #e2abbe);
