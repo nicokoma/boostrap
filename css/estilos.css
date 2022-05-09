@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "nunito-regular";
+  src: url("../assets/fonts/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "nunito-light";
+  src: url("../assets/fonts/Nunito-Light.ttf");
+}
+@font-face {
+  font-family: "nunito-bold";
+  src: url("../assets/fonts/Nunito-Bold.ttf");
+}
 .tarjeta, .tarjeta__3, .tarjeta__2 {
   width: 100%;
   margin: 20px auto;
@@ -18,13 +30,13 @@
   font-size: 24px;
   color: #FFFFFF;
   font-weight: 700;
-  font-family: "ubuntu-bold";
+  font-family: "nunito-bold";
 }
 
 .tarjeta .texto, .tarjeta__3 .texto, .tarjeta__2 .texto {
   font-size: 18px;
   font-weight: 200;
-  font-family: "ubuntu-regular";
+  font-family: "nunito-regular";
 }
 
 h1 {
@@ -124,20 +136,8 @@ html, body {
   background-color: #00a9ad;
 }
 
-@font-face {
-  font-family: "ubuntu-regular";
-  src: url("../assets/fonts/Ubuntu-Regular.ttf");
-}
-@font-face {
-  font-family: "ubuntu-light";
-  src: url("../assets/fonts/Ubuntu-Light.ttf");
-}
-@font-face {
-  font-family: "ubuntu-bold";
-  src: url("../assets/fonts/Ubuntu-Bold.ttf");
-}
 body {
-  font-family: "ubuntu-regular";
+  font-family: "nunito-regular";
 }
 
 h1 {
@@ -145,7 +145,7 @@ h1 {
 }
 
 h1, h2, p, button, a, .boton, .cliente a, .quienes-home button, .quienes-home a {
-  font-family: "ubuntu-regular";
+  font-family: "nunito-regular";
 }
 
 h1 {
@@ -187,7 +187,7 @@ h3 {
 header {
   animation: fadeIn;
   animation-duration: 1s;
-  background-color: pink !important;
+  background-image: linear-gradient(black, rgb(32, 32, 32));
 }
 
 .encabezado {
@@ -210,15 +210,6 @@ header {
   grid-column: 8/12;
   justify-content: space-evenly;
   list-style-type: none;
-}
-.encabezado .navbar-v3ktor {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background-image: linear-gradient(black, rgb(32, 32, 32));
-  height: 65px;
-  align-items: center;
-  color: white;
-  font-family: "ubuntu-regular";
 }
 .encabezado a {
   background: none;
@@ -285,7 +276,7 @@ header {
   animation-duration: 200ms;
   animation-delay: 1s;
   font-size: 5em;
-  font-family: "ubuntu-bold";
+  font-family: "nunito-bold";
   letter-spacing: -2px;
 }
 .principal .texto {
@@ -329,7 +320,7 @@ header {
   display: flex;
   grid-column: 2/6;
   grid-row: 3/4;
-  font-family: "ubuntu-light";
+  font-family: "nunito-light";
   line-height: 24px;
 }
 .quienes-home img {
@@ -366,7 +357,7 @@ header {
 }
 
 .descripcion-home {
-  font-family: "ubuntu-bold";
+  font-family: "nunito-bold";
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -383,7 +374,7 @@ header {
   grid-row: 3;
   color: #FFF;
   font-size: 20px;
-  font-family: "ubuntu-light";
+  font-family: "nunito-light";
   align-items: end;
   margin-left: 40px;
 }
@@ -395,7 +386,7 @@ header {
   box-sizing: border-box;
   margin-left: 40px;
   line-height: 65px;
-  font-family: "ubuntu-light";
+  font-family: "nunito-light";
 }
 .descripcion-home .conceptos {
   display: flex;
@@ -572,7 +563,7 @@ header {
   font-size: 4em;
   text-align: right;
   line-height: 65px;
-  font-family: "ubuntu-bold";
+  font-family: "nunito-bold";
   animation: bounceIn;
   animation-duration: 1s;
 }
@@ -847,7 +838,7 @@ header {
     grid-column: 2;
     grid-row: 1;
     font-size: 20px;
-    font-family: "ubuntu-light";
+    font-family: "nunito-light";
     color: #FFF;
     align-items: end;
     margin-left: 0px;
@@ -861,7 +852,7 @@ header {
     margin-left: 0px;
     line-height: 40px;
     font-size: 0.7em;
-    font-family: "ubuntu-light";
+    font-family: "nunito-light";
   }
   .descripcion-home .conceptos {
     display: flex;
@@ -1048,7 +1039,7 @@ header {
     opacity: 0.7;
   }
   .section-video .titulo {
-    font-family: "ubuntu-bold";
+    font-family: "nunito-bold";
     font-size: 2em;
     text-align: left;
     line-height: 20px;

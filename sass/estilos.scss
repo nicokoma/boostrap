@@ -36,30 +36,17 @@ html, body{
 }
 
 .rojo-mc{
-    background-color:#c2172a;
+    background-color: $rojo-mc;
 }
 
 .verde-metro{
-    background-color:#00a9ad;
+    background-color: $verde-metro;
 }
 
 
 
 
-@font-face{
-    font-family: $tipografia-v3ktor;
-    src: url('../assets/fonts/Ubuntu-Regular.ttf');
-}
 
-@font-face{
-    font-family: 'ubuntu-light';
-    src: url('../assets/fonts/Ubuntu-Light.ttf');
-}
-
-@font-face{
-    font-family: 'ubuntu-bold';
-    src: url('../assets/fonts/Ubuntu-Bold.ttf');
-}
 
 body{
     font-family: $tipografia-v3ktor;
@@ -130,7 +117,7 @@ h3{
 header{
     animation: fadeIn;
     animation-duration: 1s;
-    background-color: pink !important;
+    background-image: linear-gradient(black, rgb(32, 32, 32));
     
 }
 
@@ -162,15 +149,6 @@ header{
         
     }
 
-    .navbar-v3ktor{
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        background-image: linear-gradient(black, rgb(32, 32, 32));
-        height: 65px;
-        align-items: center;
-        color: white;
-        font-family: $tipografia-v3ktor;
-    }
 
     a{
         background: none;
@@ -656,7 +634,7 @@ header{
         font-size: 4em;
         text-align: right;
         line-height: 65px;
-        font-family: 'ubuntu-bold';
+        font-family: $tipografia-v3ktor-bold;
         animation: bounceIn;
         animation-duration: 1s;
         
