@@ -51,8 +51,10 @@
     <section class="contacto">
         <!--Formularios-->
         <h1 class="titulo">Contacto</h1>
-    
+        
+        
         <div class="formulario">
+        <!--
             <form action="https://formspree.io/f/mbjwpwwz" method="POST">
             <div class="mb-3">
                 <input class="form-control form-control-lg nombre" id="exampleFormControlInput1" type="text" name="nombre" placeholder="Nombre">
@@ -65,6 +67,22 @@
             </div>
             <button type="submit" class="boton">ENVIAR</button>
           </form>
+        -->
+
+    <form action="contact.php" method="POST">
+        <div class="mb-3">
+            <input class="form-control form-control-lg nombre" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+        </div>
+        <div class="mb-3">
+            <input class="form-control form-control-lg email" id="email" name="email" type="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control mensaje-form" id="mensaje" name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
+        </div>
+            <input class="boton" id="submit" name="submit" type="submit" value="Enviar">
+     </form>
+
+
         </div>
 
         <div class="imagen">

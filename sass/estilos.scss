@@ -130,10 +130,12 @@ h3{
 header{
     animation: fadeIn;
     animation-duration: 1s;
+    background-color: pink !important;
     
 }
 
 .encabezado {
+    background-color: $rosa !important;
 
     .menu-bar{
         color: $blanco !important;
