@@ -136,6 +136,14 @@ html, body {
   background-color: #00a9ad;
 }
 
+.fondo-rosa {
+  background-color: #f3c9dd;
+}
+
+.fondo-celeste {
+  background-color: #67d6ea;
+}
+
 body {
   font-family: "nunito-regular";
 }
@@ -247,14 +255,37 @@ header {
   background-color: rgb(77, 77, 77);
 }
 
+.home-left {
+  display: flex;
+  background-image: radial-gradient(#f3c9dd, #e2abbe);
+  height: 100vh;
+  justify-content: end;
+  align-items: center;
+}
+.home-left h1 {
+  font-size: 6em;
+  font-family: "nunito-bold";
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.home-right {
+  display: flex;
+  background-image: radial-gradient(#67d6ea, #12abca);
+  height: 100vh;
+  align-items: center;
+}
+.home-right h1 {
+  font-size: 6em;
+  font-family: "nunito-bold";
+  text-transform: uppercase;
+  color: #FFF;
+}
+
 .principal {
-  display: grid;
-  grid-template-columns: 10% 1fr 10%;
-  grid-template-rows: repeat(8, 1fr);
+  display: flex;
   height: 100vh;
   justify-items: center;
-  background-image: url(../assets/img_index.jpg);
-  background-size: cover;
   animation: fadeIn;
   animation-duration: 1s;
 }

@@ -3,7 +3,7 @@
 @import "tipografias";
 @import "nosotros";
 @import "background";
-@import "framework";
+@import "tamanos";
 
 *{
     padding: 0;
@@ -43,9 +43,13 @@ html, body{
     background-color: $verde-metro;
 }
 
+.fondo-rosa{
+    background-color: $rosa;
+}
 
-
-
+.fondo-celeste{
+    background-color: $celeste;
+}
 
 
 body{
@@ -85,7 +89,6 @@ h3{
     font-size: $tamano-h3;
     @include fuente(rgb(0, 0, 0), uppercase)
 }
-
 
 
 
@@ -205,14 +208,47 @@ header{
 }
 
 //MAIN
+
+
+.home-left{
+    display: flex;        
+    //background-color: $rosa;
+    background-image: radial-gradient($rosa,$rosa-oscuro);
+    height: $h-100-v3ktor;
+    justify-content: end;
+    align-items: center;
+
+    h1{
+        font-size: 6em;
+        font-family: $tipografia-v3ktor-bold;
+        text-transform: uppercase;
+        color: $blanco;
+    }
+}
+
+.home-right{
+    display: flex;
+    //background-color: $celeste;
+    background-image: radial-gradient($celeste,$celeste-oscuro );
+    height: $h-100-v3ktor;
+    align-items: center;
+
+    h1{
+        font-size: 6em;
+        font-family: $tipografia-v3ktor-bold;
+        text-transform: uppercase;
+        color: $blanco;
+    }
+}
+
+
+
 .principal{
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: repeat(8,1fr);
+    display: flex;
     height: 100vh;
     justify-items: center;
-    background-image: url(../assets/img_index.jpg);
-    background-size: cover;
+    //background-image: url(../assets/img_index.jpg);
+    //background-size: cover;
     animation: fadeIn;
     animation-duration: 1s;
 
